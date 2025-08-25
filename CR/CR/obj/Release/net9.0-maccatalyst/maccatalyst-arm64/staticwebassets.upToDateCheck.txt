@@ -1,8 +1,0 @@
-C:\Users\JFC\Downloads\CR\CR\CR\wwwroot\css\bootstrap\bootstrap.min.css.map
-C:\Users\JFC\Downloads\CR\CR\CR\wwwroot\css\app.css
-C:\Users\JFC\Downloads\CR\CR\CR\wwwroot\index.html
-C:\Users\JFC\Downloads\CR\CR\CR\wwwroot\css\bootstrap\bootstrap.min.css
-wwwroot\css\app.css
-wwwroot\css\bootstrap\bootstrap.min.css
-wwwroot\css\bootstrap\bootstrap.min.css.map
-wwwroot\index.html
