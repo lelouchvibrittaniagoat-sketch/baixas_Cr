@@ -1,0 +1,383 @@
+﻿using System.Globalization;
+using System.Runtime.CompilerServices;
+using System.Text.Json;
+using System.Text;
+using API_CONTAS_A_RECEBER_BAIXAS.DTOS;
+using API_CONTAS_A_RECEBER_BAIXAS.Models;
+using API_CONTAS_A_RECEBER_BAIXAS.Models_context;
+using ClosedXML.Excel;
+using DocumentFormat.OpenXml.Spreadsheet;
+using Microsoft.Data.Analysis;
+using static System.Net.WebRequestMethods;
+using API_CONTAS_A_RECEBER_BAIXAS.Interfaces;
+using System.Security.Cryptography.Xml;
+using System;
+
+
+namespace API_CONTAS_A_RECEBER_BAIXAS.Services
+{
+    public class ComposicaoService
+    {
+
+        public ContasAReceberDbContext Context { get; set; }
+        public List<Dictionary<String, List<String>>> listaComErrosNotasJson = new List<Dictionary<String, List<String>>>();
+        public ServiceLayerService serviceLayerService { get; set; }
+        public IncomingPaymentsService incomingPaymentsService { get; set; }
+        public List<NotaFiscal> TodasnotasFiscaisComproblemas {get; set; }
+        public ComposicaoService (ContasAReceberDbContext dbContext)
+        {
+            Context = dbContext;
+            incomingPaymentsService = new IncomingPaymentsService(null, dbContext);
+            serviceLayerService = new ServiceLayerService();
+        }
+        public async Task<byte[]> CriarComposicaoComErros(int idComposicao)
+        {
+            var composicoesComErro =  Context.BaixasCR.Where(x => (x.status != "SEM ERROS" || x.json_erros.Count >0) && x.id == idComposicao).ToList();
+            if(composicoesComErro.Count == 0)
+            {
+                return null;
+            }
+            byte[] arquivoComposicao = composicoesComErro.FirstOrDefault().arquivo_excel;
+            return this.AtualizarPlanilhaComErros(arquivoComposicao, composicoesComErro.FirstOrDefault().json_erros).arquivoAtualizado;
+        }
+        public async Task<Composicao> MainExecution(Composicao composicao, List<String> errosEncontrados, string ContaContabil, BaixasCR baixasCR)
+        {
+            serviceLayerService.RealizarLogin();
+            incomingPaymentsService.DataFrameComposicao = composicao.ComposicaoCr;
+            var notasFiscaisComposicao = incomingPaymentsService.CriarDictComClsESuasNotas();
+            Filiais filialEmQuestao = incomingPaymentsService.GetIdEmpresaPorNome(composicao.Filial);
+            if(filialEmQuestao == null)
+            {
+                errosEncontrados.Add("Filial não encontrada nas opções disponiveis no sistema. Verifique a composição!");
+                return null;
+            }
+            List<NotasASeremBaixadas> notasFiscais = incomingPaymentsService.VerificarNotasFiscais(notasFiscaisComposicao);
+            composicao.NotasASeremBaixadas = notasFiscais;
+            List<NotaFiscal> TodasAsNotasComProblema = new List<NotaFiscal>();
+            foreach (NotasASeremBaixadas nota in composicao.NotasASeremBaixadas)
+            {
+                var notasdeSaidaComProblemas = nota.NotasFiscaisSaida.Where(x => x.NotasEstaApta() == false).ToList();
+                var notasDeDevolucaoComProblemas = nota.NotasFiscaisDevolucao.Where(x => x.NotasEstaApta() == false).ToList();
+                if (notasdeSaidaComProblemas.Count() > 0 || notasDeDevolucaoComProblemas.Count() > 0)
+                {
+
+                    nota.NotasFiscaisDeDevolucaoComProblemas = notasDeDevolucaoComProblemas;
+                    nota.NotasFiscaisSaidaComProblemas = notasdeSaidaComProblemas;
+                    List<NotaFiscal> notasFiscaisComproblemas = nota.GetNotasFiscaisComProblemas();
+                    notasFiscaisComproblemas.ForEach(
+                        x => {
+                            errosEncontrados.AddRange(x.GetListaDeErrosString());
+                            listaComErrosNotasJson.Add(x.ProblemasJson);
+                        }
+                    );
+
+                    //TodasnotasFiscaisComproblemas.AddRange(notasFiscaisComproblemas);
+                    continue;
+                }
+                    var formatos = new[] { "dd/MM/yyyy", "dd/MM/yyyy HH:mm:ss" };
+                    DateOnly dataBaixa = DateOnly.ParseExact(composicao.DataBaixa, formatos, CultureInfo.InvariantCulture);
+
+                    IncomingPayments incomingPayments = new IncomingPayments();
+                    incomingPayments.Series = 15;
+                    incomingPayments.Remarks = composicao.Obs;
+
+                    // ou usando TryParse:
+
+                    incomingPayments.BPLID = filialEmQuestao.IdSap;
+                    
+                    
+
+                    incomingPayments.TransferSum = Math.Round( nota.GetValorLiquidoNotasDevolucoes() + nota.GetValorLiquidoNotasSaidas(),2);
+                    incomingPayments.TransferDate = dataBaixa;
+                    if (ContaContabil== "2.01.01.02.01")
+                    {
+                        incomingPayments.TransferAccount = ContaContabil;
+                        incomingPayments.DocDate = PrimeiroDomingoDoMes(dataBaixa);
+                        incomingPayments.TaxDate = PrimeiroDomingoDoMes(dataBaixa);
+                    }else if (ContaContabil == "4.02.01.01.21")
+                    {
+                        incomingPayments.TransferAccount = ContaContabil;
+                        incomingPayments.DocDate = dataBaixa;
+                        incomingPayments.TaxDate = dataBaixa;    
+                    }
+                    else
+                    {
+                        incomingPayments.TransferAccount = composicao.ContaContabil;
+                        incomingPayments.DocDate = dataBaixa;
+                        incomingPayments.TaxDate = dataBaixa;
+                    }
+                    
+
+                    incomingPayments.CardCode = nota.Cl;
+                    var paymentInvoices = incomingPaymentsService.MontarComposicaoSap(composicao, nota.Cl);
+                    incomingPayments.PaymentInvoices = paymentInvoices;
+                    incomingPayments.U_ContaContabilDeOrigem = composicao.ContaContabil;
+                    double totalCashFlow = Math.Round(nota.GetValorLiquidoNotasDevolucoes() + nota.GetValorLiquidoNotasSaidas(), 2);
+
+                    if (ContaContabil != "2.01.01.02.01" && ContaContabil != "4.02.01.01.21")
+                    {
+                        CashFlowAssignments cashFlowAssignments = new CashFlowAssignments
+                        {
+                            PaymentMeans = "pmtBankTransfer"//,
+                            //AmountLC = totalCashFlow
+                        };
+                        incomingPayments.CashFlowAssignments = new List<CashFlowAssignments> { cashFlowAssignments };
+                    }
+                    //incomingPayments.UnderOverpaymentdifference = totalCashFlow - totalComposicaoLiquido;
+                    var Json = JsonSerializer.Serialize(incomingPayments, new JsonSerializerOptions
+                    {
+                        WriteIndented = true
+                    });
+                    Console.WriteLine(Json);
+                    var result = serviceLayerService.RealizarBaixasContasAReceber(Json);
+                    var resultadoComoString = result.Content.ReadAsStringAsync().GetAwaiter().GetResult();
+                    
+                    if (!result.IsSuccessStatusCode)
+                    {
+                        
+                        errosEncontrados.Add(resultadoComoString);
+                            
+                    }
+                    else
+                    {
+                        try
+                        {
+                            using (JsonDocument doc = JsonDocument.Parse(resultadoComoString))
+                            {
+                                JsonElement root = doc.RootElement;
+
+                                if (root.TryGetProperty("DocEntry", out JsonElement docNumElement))
+                                {
+                                    int docEntry = docNumElement.GetInt32();
+                                    Console.WriteLine($"DocEntry: {docEntry}");
+
+                                    
+                                    composicao.documentoCriados.Add(docEntry);
+                                    Dictionary<string, List<string>> docs = new Dictionary<string, List<string>>();
+                                    
+                                    //docs[$"{docEntry}"].AddRange(paymentInvoices.Select(x=>x.DocEntry.ToString()));
+                                    //baixasCR.baixas_e_docs_vinculados.Add(docs);
+                                    //Context.Update(baixasCR);
+                                    //await Context.SaveChangesAsync();
+                            }
+                            else
+                                {
+                                    Console.WriteLine("Campo docEntry não encontrado na resposta.");
+                                }
+                            }
+                        }
+                        catch (JsonException ex)
+                        {
+                            Console.WriteLine("Erro ao ler JSON: " + ex.Message);
+                        }
+                     }
+                    Console.WriteLine(resultadoComoString);
+                
+            }
+            return composicao;
+
+        }
+        public Composicao GetComposicao(XLWorkbook composicao)
+        {
+            var worksheet = composicao.Worksheet(1);
+            var rede = worksheet.Cell(1, 2).GetValue<string>();
+            var filial = worksheet.Cell(2, 2).GetValue<string>();
+            var dataPagamento = worksheet.Cell(4, 2).GetValue<string>();
+            var contaContabil = worksheet.Cell(5, 2).GetValue<string>();
+            var obs = worksheet.Cell(6, 2).GetValue<string>();
+            var lastRow = worksheet.LastRowUsed().RowNumber();
+            var lastCol = worksheet.LastColumnUsed().ColumnNumber();
+            DataFrameColumn[] composicaoNotas = GetNotasFiscais(worksheet, lastRow);
+            Composicao composicaoDTo = new Composicao
+            {
+                Filial = filial,
+                DataBaixa = dataPagamento,
+                ContaContabil = contaContabil,
+                Obs = obs,
+                ComposicaoCr = new DataFrame(composicaoNotas),
+                Rede = rede
+
+            };
+            return composicaoDTo;
+        }
+        public DateOnly PrimeiroDomingoDoMes(DateOnly data)
+        {
+            DateTime dataReferencia = data.ToDateTime(new TimeOnly(0, 0)); // usa a data passada como referência
+            DateTime hoje = DateTime.Today;
+
+            DateTime mesParaCalculo;
+
+            // Se a data referência for nos últimos 180 dias
+            if ((hoje - dataReferencia).TotalDays <= 180)
+            {
+                // Usar o mês atual
+                mesParaCalculo = new DateTime(hoje.Year, hoje.Month, 1);
+            }
+            else
+            {
+                // Usar o mês seguinte à data de referência
+                mesParaCalculo = new DateTime(dataReferencia.Year, dataReferencia.Month, 1).AddMonths(1);
+            }
+
+            // Calcular o primeiro domingo
+            int diasParaDomingo = ((int)DayOfWeek.Sunday - (int)mesParaCalculo.DayOfWeek + 7) % 7;
+            DateTime primeiroDomingo = mesParaCalculo.AddDays(diasParaDomingo);
+
+            // Retornar como DateOnly
+            return DateOnly.FromDateTime(primeiroDomingo);
+        }
+
+        public DataFrameColumn[] GetNotasFiscais(IXLWorksheet worksheet, int lastRow)
+        {
+            // ✅ Cabeçalhos fixos
+            var totalRows = lastRow - 10 + 1; // número de linhas que vamos le
+            var columns = new DataFrameColumn[9];
+            columns[0] = new StringDataFrameColumn("DATA DE EMISSÃO");
+            columns[1] = new StringDataFrameColumn("CL");
+            columns[2] = new StringDataFrameColumn("NUMERO INTERNO");
+            columns[3] = new StringDataFrameColumn("NUMERO DA NOTA");
+            columns[4] = new StringDataFrameColumn("TIPO DO DOCUMENTO");
+            columns[5] = new DoubleDataFrameColumn("VALOR BRUTO");
+            columns[6] = new DoubleDataFrameColumn("% DESCONTO");
+            columns[7] = new DoubleDataFrameColumn("VALOR DE DESCONTO");
+            columns[8] = new DoubleDataFrameColumn("VALOR LIQUIDO");
+            //columns[9] = new Int32DataFrameColumn("LinhaExcel", totalRows); // coluna extra linha
+            double GetDouble(IXLCell cell) =>
+                double.TryParse(cell.GetValue<string>(), out var result) ? result : 0;
+
+            for (int row = 10; row <= lastRow; row++)
+            {
+                (columns[0] as StringDataFrameColumn)!.Append(worksheet.Cell(row, 1).GetValue<string>());
+                (columns[1] as StringDataFrameColumn)!.Append(worksheet.Cell(row, 2).GetValue<string>());
+                (columns[2] as StringDataFrameColumn)!.Append(worksheet.Cell(row, 3).GetValue<string>());
+                (columns[3] as StringDataFrameColumn)!.Append(worksheet.Cell(row, 4).GetValue<string>());
+                (columns[4] as StringDataFrameColumn)!.Append(worksheet.Cell(row, 5).GetValue<string>());
+                (columns[5] as DoubleDataFrameColumn)!.Append(GetDouble(worksheet.Cell(row, 6)));
+                (columns[6] as DoubleDataFrameColumn)!.Append(GetDouble(worksheet.Cell(row, 7)));
+                (columns[7] as DoubleDataFrameColumn)!.Append(GetDouble(worksheet.Cell(row, 8)));
+                (columns[8] as DoubleDataFrameColumn)!.Append(GetDouble(worksheet.Cell(row, 9)));
+                //(columns[9] as Int32DataFrameColumn)!.Append(row);
+            }
+            return columns;
+
+        }
+        public (IXLWorksheet worksheetAtualizada, byte[] arquivoAtualizado) AtualizarPlanilhaComErros(
+            byte[] arquivoComposicao,
+            List<Dictionary<string, List<string>>> erros)
+        {
+            using (var memoryStream = new MemoryStream(arquivoComposicao))
+            using (var workbook = new XLWorkbook(memoryStream))
+            {
+                var worksheet = workbook.Worksheet(1);
+                int lastRow = worksheet.LastRowUsed().RowNumber();
+
+                // Aplica os erros na worksheet
+                for (int row = 10; row <= lastRow; row++)
+                {
+                    var numeroNota = worksheet.Cell(row, 4).GetValue<string>(); // Coluna 4 = NUMERO DA NOTA
+                    var mensagensErro = new List<string>();
+
+                    foreach (var erroDict in erros)
+                    {
+                        if (erroDict.TryGetValue(numeroNota, out var errosEncontrados))
+                        {
+                            mensagensErro.AddRange(errosEncontrados);
+                        }
+                    }
+
+                    if (mensagensErro.Any())
+                    {
+                        var erroUnificado = string.Join("; ", mensagensErro);
+                        worksheet.Cell(row, 10).Value = erroUnificado; // Coluna J (10)
+                    }
+                }
+
+                // Salva o workbook em novo MemoryStream
+                using (var outputStream = new MemoryStream())
+                {
+                    workbook.SaveAs(outputStream);
+                    var arquivoAtualizado = outputStream.ToArray();
+
+                    // Retorna a worksheet atualizada + o arquivo
+                    return (worksheet, arquivoAtualizado);
+                }
+            }
+        }
+
+        public void GetHeadersComposicao()
+        {
+
+        }
+
+        public BaixasCR SalvarInstanciaBaixa(byte[]? arquivoExcel,string listaComErros,string nomeArquivo,Composicao composicao, string extensao,List<Dictionary<String, List<String>>> notasJson, string adiantamentoCliente)
+        {
+            BaixasCR baixasCR = new BaixasCR();
+
+            baixasCR.status = listaComErros;
+            baixasCR.data_Atualizacao = DateTime.UtcNow;
+            baixasCR.nome_arquivo = nomeArquivo;
+            if (arquivoExcel !=  null)
+            {
+                baixasCR.arquivo_excel = arquivoExcel;
+            }
+            if(composicao == null)
+            {
+                throw new ArgumentNullException("Não informado nenhum objeto de composição.");
+                
+            }
+            string[] formatosAceitos = { "dd/MM/yyyy", "dd/MM/yyyy HH:mm:ss" };
+
+            DateTime dataFiltrada;
+            bool conversaoOk = DateTime.TryParseExact(
+                composicao.DataBaixa,
+                formatosAceitos,
+                CultureInfo.InvariantCulture,
+                DateTimeStyles.None,
+                out dataFiltrada
+            );
+
+
+            baixasCR.data_baixa = dataFiltrada.ToString("dd/MM/yyyy");
+            baixasCR.conta_contabil = composicao.ContaContabil;
+            baixasCR.filial = composicao.Filial;
+            baixasCR.rede = composicao.Rede;
+            baixasCR.extensao = extensao;
+            baixasCR.json_erros = listaComErrosNotasJson;
+
+            baixasCR.nro_baixas = new List<int>();
+            if(adiantamentoCliente == "null")
+            {
+                adiantamentoCliente = composicao.ContaContabil;
+
+            }
+            baixasCR.conta_contabil_efetiva = adiantamentoCliente;
+            BaixasCR baixaEncontrada = Context.BaixasCR.FirstOrDefault(x => x.data_baixa == dataFiltrada.ToString("dd/MM/yyyy") && x.filial ==composicao.Filial && x.conta_contabil ==composicao.ContaContabil && x.rede == composicao.Rede);
+            if(baixaEncontrada == null)
+            {
+                Context.Add(baixasCR);
+            }
+            else
+            {
+                if(listaComErros =="")
+                {
+                    listaComErros = "SEM ERROS";
+                }
+                baixaEncontrada.status = listaComErros;
+                if (arquivoExcel != null)
+                {
+                    baixasCR.extensao = extensao;
+                    baixasCR.arquivo_excel = arquivoExcel;
+                }
+                baixaEncontrada.data_Atualizacao =baixasCR.data_Atualizacao;
+                baixaEncontrada.json_erros = baixasCR.json_erros;
+                baixaEncontrada.conta_contabil_efetiva = adiantamentoCliente;
+                baixasCR = baixaEncontrada;
+            }
+            Context.SaveChanges();
+            return baixasCR;
+     
+
+            
+        }
+    }
+}

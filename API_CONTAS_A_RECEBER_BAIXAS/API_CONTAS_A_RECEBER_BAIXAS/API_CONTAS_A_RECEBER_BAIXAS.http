@@ -1,0 +1,6 @@
+@API_CONTAS_A_RECEBER_BAIXAS_HostAddress = http://localhost:5129
+
+GET {{API_CONTAS_A_RECEBER_BAIXAS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

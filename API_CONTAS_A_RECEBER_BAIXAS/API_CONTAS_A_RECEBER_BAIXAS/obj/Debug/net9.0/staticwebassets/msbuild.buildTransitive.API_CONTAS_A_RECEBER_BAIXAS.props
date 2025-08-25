@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\API_CONTAS_A_RECEBER_BAIXAS.props" />
+</Project>

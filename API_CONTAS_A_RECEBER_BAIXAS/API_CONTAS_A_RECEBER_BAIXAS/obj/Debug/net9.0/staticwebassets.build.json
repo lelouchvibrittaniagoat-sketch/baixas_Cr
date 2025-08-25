@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "NPmpnYFPpdLEGbiGktIxCNX72AOfu2aySvvC3YTi//E=",
+  "Source": "API_CONTAS_A_RECEBER_BAIXAS",
+  "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

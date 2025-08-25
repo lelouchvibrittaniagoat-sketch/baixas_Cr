@@ -1,0 +1,244 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JFC\\Downloads\\CR\\CR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|c:\\users\\jfc\\downloads\\cr\\cr\\cr\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|solutionrelative:cr\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|c:\\users\\jfc\\downloads\\cr\\cr\\cr\\services\\filedownloadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|solutionrelative:cr\\services\\filedownloadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|c:\\users\\jfc\\downloads\\cr\\cr\\cr\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|solutionrelative:cr\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|c:\\users\\jfc\\downloads\\cr\\cr\\cr\\cr.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|solutionrelative:cr\\cr.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|c:\\users\\jfc\\downloads\\cr\\cr\\cr\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|solutionrelative:cr\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|c:\\users\\jfc\\downloads\\cr\\cr\\cr\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|solutionrelative:cr\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|c:\\users\\jfc\\downloads\\cr\\cr\\cr\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|solutionrelative:cr\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|c:\\users\\jfc\\downloads\\cr\\cr\\cr\\components\\pages\\formcomposicao.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|solutionrelative:cr\\components\\pages\\formcomposicao.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|c:\\users\\jfc\\downloads\\cr\\cr\\cr\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|solutionrelative:cr\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|c:\\users\\jfc\\downloads\\cr\\cr\\cr\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|solutionrelative:cr\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|c:\\users\\jfc\\downloads\\cr\\cr\\cr\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|solutionrelative:cr\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|c:\\users\\jfc\\downloads\\cr\\cr\\cr\\components\\pages\\weather.razor||{93FA4DC3-61EC-47AF-B0BA-50CAD3CAF049}",
+      "RelativeMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|solutionrelative:cr\\components\\pages\\weather.razor||{93FA4DC3-61EC-47AF-B0BA-50CAD3CAF049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|c:\\users\\jfc\\downloads\\cr\\cr\\cr\\components\\_imports.razor||{93FA4DC3-61EC-47AF-B0BA-50CAD3CAF049}",
+      "RelativeMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|solutionrelative:cr\\components\\_imports.razor||{93FA4DC3-61EC-47AF-B0BA-50CAD3CAF049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|c:\\users\\jfc\\downloads\\cr\\cr\\cr\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D9B65BF3-5A90-4C3B-82B1-CEC104AD4B52}|CR\\CR.csproj|solutionrelative:cr\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "CR\\Components\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "CR\\Components\\Pages\\Counter.razor",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAgwIIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-04T13:33:29.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "CR\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "CR\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T13:39:01.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CR.csproj",
+              "DocumentMoniker": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\CR.csproj",
+              "RelativeDocumentMoniker": "CR\\CR.csproj",
+              "ToolTip": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\CR.csproj",
+              "RelativeToolTip": "CR\\CR.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-25T16:19:17.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "CR\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\wwwroot\\index.html",
+              "RelativeToolTip": "CR\\wwwroot\\index.html",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-01T23:53:45.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormComposicao.razor",
+              "DocumentMoniker": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\Pages\\FormComposicao.razor",
+              "RelativeDocumentMoniker": "CR\\Components\\Pages\\FormComposicao.razor",
+              "ToolTip": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\Pages\\FormComposicao.razor",
+              "RelativeToolTip": "CR\\Components\\Pages\\FormComposicao.razor",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAmwLcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-04T13:33:43.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "CR\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "CR\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-01T23:57:02.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "CR\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\MauiProgram.cs",
+              "RelativeToolTip": "CR\\MauiProgram.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T23:42:40.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "CR\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "CR\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T13:39:06.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileDownloadService.cs",
+              "DocumentMoniker": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Services\\FileDownloadService.cs",
+              "RelativeDocumentMoniker": "CR\\Services\\FileDownloadService.cs",
+              "ToolTip": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Services\\FileDownloadService.cs",
+              "RelativeToolTip": "CR\\Services\\FileDownloadService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T16:19:42.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Error.razor",
+              "DocumentMoniker": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\Pages\\Error.razor",
+              "RelativeDocumentMoniker": "CR\\Components\\Pages\\Error.razor",
+              "ToolTip": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\Pages\\Error.razor",
+              "RelativeToolTip": "CR\\Components\\Pages\\Error.razor",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAmwLkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-25T14:39:56.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "CR\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "CR\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAPIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-06T15:37:04.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "CR\\Components\\Pages\\Weather.razor",
+              "ToolTip": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\Pages\\Weather.razor",
+              "RelativeToolTip": "CR\\Components\\Pages\\Weather.razor",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-02T00:05:32.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\App.xaml",
+              "RelativeDocumentMoniker": "CR\\App.xaml",
+              "ToolTip": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\App.xaml",
+              "RelativeToolTip": "CR\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-01T23:58:52.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "CR\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\JFC\\Downloads\\CR\\CR\\CR\\Components\\_Imports.razor",
+              "RelativeToolTip": "CR\\Components\\_Imports.razor",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-01T23:44:02.446Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

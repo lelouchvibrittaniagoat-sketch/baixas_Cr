@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CR</id>
+    <version>1.0.0</version>
+    <authors>CR</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net9.0-android35.0">
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="MudBlazor" version="8.10.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net9.0-ios18.1">
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="MudBlazor" version="8.10.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net9.0-maccatalyst18.1">
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="MudBlazor" version="8.10.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net9.0-windows10.0.19041">
+        <dependency id="Microsoft.AspNetCore.Components.WebView.Maui" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="9.0.0" exclude="Build,Analyzers" />
+        <dependency id="MudBlazor" version="8.10.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\bin\Debug\net9.0-android\CR.runtimeconfig.json" target="lib\net9.0-android35.0\CR.runtimeconfig.json" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\bin\Debug\net9.0-android\CR.dll" target="lib\net9.0-android35.0\CR.dll" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\bin\Debug\net9.0-android\CR.xml" target="lib\net9.0-android35.0\CR.xml" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\bin\Debug\net9.0-ios\iossimulator-x64\CR.runtimeconfig.json" target="lib\net9.0-ios18.1\CR.runtimeconfig.json" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\bin\Debug\net9.0-ios\iossimulator-x64\CR.dll" target="lib\net9.0-ios18.1\CR.dll" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\CR.runtimeconfig.json" target="lib\net9.0-maccatalyst18.1\CR.runtimeconfig.json" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\CR.dll" target="lib\net9.0-maccatalyst18.1\CR.dll" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\CR.runtimeconfig.json" target="lib\net9.0-windows10.0.19041\CR.runtimeconfig.json" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\CR.dll" target="lib\net9.0-windows10.0.19041\CR.dll" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\resources.pri" target="lib\net9.0-windows10.0.19041\resources.pri" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\obj\Debug\net9.0-android\scopedcss\bundle\CR.styles.css" target="staticwebassets\CR.styles.css" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\wwwroot\css\app.css" target="staticwebassets\css\app.css" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\wwwroot\css\bootstrap\bootstrap.min.css" target="staticwebassets\css\bootstrap\bootstrap.min.css" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\wwwroot\css\bootstrap\bootstrap.min.css.map" target="staticwebassets\css\bootstrap\bootstrap.min.css.map" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\wwwroot\index.html" target="staticwebassets\index.html" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\obj\Debug\net9.0-android\staticwebassets\msbuild.CR.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" target="build\Microsoft.AspNetCore.StaticWebAssetEndpoints.props" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\obj\Debug\net9.0-android\staticwebassets\msbuild.CR.Microsoft.AspNetCore.StaticWebAssets.props" target="build\Microsoft.AspNetCore.StaticWebAssets.props" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\obj\Debug\net9.0-android\staticwebassets\msbuild.build.CR.props" target="build\CR.props" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\obj\Debug\net9.0-android\staticwebassets\msbuild.buildMultiTargeting.CR.props" target="buildMultiTargeting\CR.props" />
+    <file src="C:\Users\JFC\Downloads\CR\CR\CR\obj\Debug\net9.0-android\staticwebassets\msbuild.buildTransitive.CR.props" target="buildTransitive\CR.props" />
+  </files>
+</package>
