@@ -29,7 +29,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 00:02:56 GMT"
+          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
         }
       ],
       "EndpointProperties": [
@@ -66,7 +66,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 00:02:56 GMT"
+          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
         }
       ],
       "EndpointProperties": [
@@ -111,7 +111,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 00:03:21 GMT"
+          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
         }
       ],
       "EndpointProperties": [
@@ -156,7 +156,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 00:03:21 GMT"
+          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
         }
       ],
       "EndpointProperties": [
@@ -193,7 +193,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 00:04:03 GMT"
+          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
         }
       ],
       "EndpointProperties": [
@@ -238,7 +238,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 00:04:03 GMT"
+          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
         }
       ],
       "EndpointProperties": [
@@ -275,7 +275,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 00:06:56 GMT"
+          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
         }
       ],
       "EndpointProperties": [
@@ -320,13 +320,177 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 00:06:56 GMT"
+          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
           "Value": "sha256-KvEAStYAexdsXUS7xAHQV/kpL/XiE+Wmh0Y4r/CWQys="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250825_210921.2mfyjkwuo1.xlsm",
+      "AssetFile": "arquivos/arquivo_20250825_210921.xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110714"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"djniMqvtuNLhY9ZMf3EIJbYl5pUXy7E/HtZ8Xal+QFs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2mfyjkwuo1"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-djniMqvtuNLhY9ZMf3EIJbYl5pUXy7E/HtZ8Xal+QFs="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250825_210921.xlsm"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250825_210921.xlsm",
+      "AssetFile": "arquivos/arquivo_20250825_210921.xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110714"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"djniMqvtuNLhY9ZMf3EIJbYl5pUXy7E/HtZ8Xal+QFs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-djniMqvtuNLhY9ZMf3EIJbYl5pUXy7E/HtZ8Xal+QFs="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_090542.vgikxktslx.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_090542.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/utHZGiSUtV4qjna45qkSf3eZZM77Afr29Yl4FqAZ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:05:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vgikxktslx"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/utHZGiSUtV4qjna45qkSf3eZZM77Afr29Yl4FqAZ0="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_090542.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_090542.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_090542.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f/utHZGiSUtV4qjna45qkSf3eZZM77Afr29Yl4FqAZ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:05:43 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f/utHZGiSUtV4qjna45qkSf3eZZM77Afr29Yl4FqAZ0="
         }
       ]
     }

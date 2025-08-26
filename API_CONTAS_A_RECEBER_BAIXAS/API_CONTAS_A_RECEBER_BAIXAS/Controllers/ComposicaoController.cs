@@ -195,7 +195,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
 
                         // Retorna a URL pública para o front
                         var urlDownload = $"{Request.Scheme}://{Request.Host}/arquivos/{nomeArquivoCriado}";
-                        return Ok(new { Url = urlDownload });
+                        return BadRequest(new { Url = urlDownload });
                     }
                     composicao.documentoCriados = new List<int>();
                     erroService.ValidarErroDeEstrutura(headersOk, apenasHaUmaSheet, inicioDeDados);

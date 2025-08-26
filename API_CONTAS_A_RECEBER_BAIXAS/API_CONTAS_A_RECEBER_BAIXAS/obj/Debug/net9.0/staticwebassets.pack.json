@@ -1,20 +1,28 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\Modelo_padrao_automacao_V1.9.5 (1).xlsm",
+      "Id": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\Modelo_padrao_automacao_V1.9.5 (1).xlsm",
       "PackagePath": "staticwebassets\\arquivos\\Modelo_padrao_automacao_V1.9.5 (1).xlsm"
     },
     {
-      "Id": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210320..xlsm",
+      "Id": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210320..xlsm",
       "PackagePath": "staticwebassets\\arquivos\\arquivo_20250825_210320..xlsm"
     },
     {
-      "Id": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210402..xlsm",
+      "Id": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210402..xlsm",
       "PackagePath": "staticwebassets\\arquivos\\arquivo_20250825_210402..xlsm"
     },
     {
-      "Id": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210655.xlsm",
+      "Id": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210655.xlsm",
       "PackagePath": "staticwebassets\\arquivos\\arquivo_20250825_210655.xlsm"
+    },
+    {
+      "Id": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210921.xlsm",
+      "PackagePath": "staticwebassets\\arquivos\\arquivo_20250825_210921.xlsm"
+    },
+    {
+      "Id": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_090542.xlsx",
+      "PackagePath": "staticwebassets\\arquivos\\arquivo_20250826_090542.xlsx"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.API_CONTAS_A_RECEBER_BAIXAS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
