@@ -1,12 +1,434 @@
 {
   "Version": 1,
-  "Hash": "NPmpnYFPpdLEGbiGktIxCNX72AOfu2aySvvC3YTi//E=",
+  "Hash": "HIoWucxh5vktG6Pn+phhvbkM3Mi0hmG8HSMNkpZdKEo=",
   "Source": "API_CONTAS_A_RECEBER_BAIXAS",
   "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "API_CONTAS_A_RECEBER_BAIXAS\\wwwroot",
+      "Source": "API_CONTAS_A_RECEBER_BAIXAS",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210320..xlsm",
+      "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
+      "RelativePath": "arquivos/arquivo_20250825_210320.#[.{fingerprint}]?.xlsm",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "03j6mcxx44",
+      "Integrity": "5IOsm2qtiPvOEW3isOI6CNtNgNJ9yM5+Lz7fZi2vo5k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250825_210320..xlsm"
+    },
+    {
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210402..xlsm",
+      "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
+      "RelativePath": "arquivos/arquivo_20250825_210402.#[.{fingerprint}]?.xlsm",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8tdn3ltwbz",
+      "Integrity": "rMxQf6ULNsZoBecdB3iAXmFTH/40uwuP62uoDJPl/u4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250825_210402..xlsm"
+    },
+    {
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210655.xlsm",
+      "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
+      "RelativePath": "arquivos/arquivo_20250825_210655#[.{fingerprint}]?.xlsm",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i2ly2c6cou",
+      "Integrity": "KvEAStYAexdsXUS7xAHQV/kpL/XiE+Wmh0Y4r/CWQys=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250825_210655.xlsm"
+    },
+    {
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\Modelo_padrao_automacao_V1.9.5 (1).xlsm",
+      "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
+      "RelativePath": "arquivos/Modelo_padrao_automacao_V1.9.5 (1)#[.{fingerprint}]?.xlsm",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zl7xy8ksej",
+      "Integrity": "x2ZaG0Ahpu0444/lA9VxVqb/aKOliOlevB58Wk5QbfU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\arquivos\\Modelo_padrao_automacao_V1.9.5 (1).xlsm"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "arquivos/arquivo_20250825_210320..03j6mcxx44.xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210320..xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5IOsm2qtiPvOEW3isOI6CNtNgNJ9yM5+Lz7fZi2vo5k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:03:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "03j6mcxx44"
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250825_210320..xlsm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5IOsm2qtiPvOEW3isOI6CNtNgNJ9yM5+Lz7fZi2vo5k="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250825_210320..xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210320..xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5IOsm2qtiPvOEW3isOI6CNtNgNJ9yM5+Lz7fZi2vo5k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:03:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5IOsm2qtiPvOEW3isOI6CNtNgNJ9yM5+Lz7fZi2vo5k="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250825_210402..8tdn3ltwbz.xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210402..xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rMxQf6ULNsZoBecdB3iAXmFTH/40uwuP62uoDJPl/u4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:04:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8tdn3ltwbz"
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250825_210402..xlsm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rMxQf6ULNsZoBecdB3iAXmFTH/40uwuP62uoDJPl/u4="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250825_210402..xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210402..xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rMxQf6ULNsZoBecdB3iAXmFTH/40uwuP62uoDJPl/u4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:04:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rMxQf6ULNsZoBecdB3iAXmFTH/40uwuP62uoDJPl/u4="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250825_210655.i2ly2c6cou.xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210655.xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110755"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KvEAStYAexdsXUS7xAHQV/kpL/XiE+Wmh0Y4r/CWQys=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:06:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i2ly2c6cou"
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250825_210655.xlsm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KvEAStYAexdsXUS7xAHQV/kpL/XiE+Wmh0Y4r/CWQys="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250825_210655.xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210655.xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110755"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KvEAStYAexdsXUS7xAHQV/kpL/XiE+Wmh0Y4r/CWQys=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:06:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KvEAStYAexdsXUS7xAHQV/kpL/XiE+Wmh0Y4r/CWQys="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/Modelo_padrao_automacao_V1.9.5 (1).xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\Modelo_padrao_automacao_V1.9.5 (1).xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x2ZaG0Ahpu0444/lA9VxVqb/aKOliOlevB58Wk5QbfU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:02:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x2ZaG0Ahpu0444/lA9VxVqb/aKOliOlevB58Wk5QbfU="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/Modelo_padrao_automacao_V1.9.5 (1).zl7xy8ksej.xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\Modelo_padrao_automacao_V1.9.5 (1).xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x2ZaG0Ahpu0444/lA9VxVqb/aKOliOlevB58Wk5QbfU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:02:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zl7xy8ksej"
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/Modelo_padrao_automacao_V1.9.5 (1).xlsm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x2ZaG0Ahpu0444/lA9VxVqb/aKOliOlevB58Wk5QbfU="
+        }
+      ]
+    }
+  ]
 }

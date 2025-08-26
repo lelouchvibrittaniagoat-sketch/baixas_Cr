@@ -200,6 +200,49 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             };
             return composicaoDTo;
         }
+        public record OcorrenciaNegativa(string CL, int LinhaExcel, double? ValorLiquido);
+        public List<OcorrenciaNegativa> VerificarCLsNegativos(DataFrameColumn[] columns)
+        {
+            var clColumn = columns[1] as StringDataFrameColumn;
+            var valorLiquidoColumn = columns[8] as DoubleDataFrameColumn;
+
+            var ocorrencias = new List<OcorrenciaNegativa>();
+
+            // 1️⃣ Agrupa por CL e calcula o total
+            var totalPorCL = new Dictionary<string, double>();
+            for (int i = 0; i < clColumn.Length; i++)
+            {
+                var cl = clColumn[i];
+                var valor = valorLiquidoColumn[i];
+
+                if (totalPorCL.ContainsKey(cl))
+                    totalPorCL[cl] += (double)valor;
+                else
+                    totalPorCL[cl] = (double)valor;
+            }
+
+            // 2️⃣ Identifica os CLs cujo total é negativo
+            var clsNegativos = totalPorCL.Where(kv => kv.Value < 0)
+                                         .Select(kv => kv.Key)
+                                         .ToHashSet();
+
+            // 3️⃣ Adiciona ocorrência para todas as linhas desses CLs
+            for (int i = 0; i < clColumn.Length; i++)
+            {
+                if (clsNegativos.Contains(clColumn[i]))
+                {
+                    ocorrencias.Add(new OcorrenciaNegativa(
+                        CL: clColumn[i],
+                        LinhaExcel: i + 10,               // linha do Excel
+                        ValorLiquido: valorLiquidoColumn[i]
+                    ));
+                }
+            }
+
+            return ocorrencias;
+        }
+
+
         public DateOnly PrimeiroDomingoDoMes(DateOnly data)
         {
             DateTime dataReferencia = data.ToDateTime(new TimeOnly(0, 0)); // usa a data passada como referência
@@ -261,6 +304,37 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             return columns;
 
         }
+        public byte[] AtualizarPlanilhaComErrosPorLinha(
+                byte[] arquivoComposicao,
+                List<OcorrenciaNegativa> ocorrenciaNegativas)
+        {
+            using var memoryStream = new MemoryStream(arquivoComposicao);
+            using var workbook = new XLWorkbook(memoryStream);
+            var worksheet = workbook.Worksheet(1);
+
+            int lastRow = worksheet.LastRowUsed().RowNumber();
+
+            // Marca os erros na coluna J (10)
+            foreach (var occ in ocorrenciaNegativas)
+            {
+                if (occ.LinhaExcel <= lastRow)
+                {
+                    var celulaErro = worksheet.Cell(occ.LinhaExcel, 10); // coluna J
+                    var textoExistente = celulaErro.GetValue<string>();
+
+                    var novaMensagem = $"CL {occ.CL} valor líquido negativo ({occ.ValorLiquido})";
+                    if (!string.IsNullOrEmpty(textoExistente))
+                        celulaErro.Value = $"{textoExistente}; {novaMensagem}";
+                    else
+                        celulaErro.Value = novaMensagem;
+                }
+            }
+
+            using var outputStream = new MemoryStream();
+            workbook.SaveAs(outputStream);
+            return outputStream.ToArray();
+        }
+
         public (IXLWorksheet worksheetAtualizada, byte[] arquivoAtualizado) AtualizarPlanilhaComErros(
             byte[] arquivoComposicao,
             List<Dictionary<string, List<string>>> erros)
@@ -274,7 +348,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                 // Aplica os erros na worksheet
                 for (int row = 10; row <= lastRow; row++)
                 {
-                    var numeroNota = worksheet.Cell(row, 4).GetValue<string>(); // Coluna 4 = NUMERO DA NOTA
+                    var numeroNota = worksheet.Cell(row, 3).GetValue<string>(); // Coluna 4 = NUMERO DA NOTA
                     var mensagensErro = new List<string>();
 
                     foreach (var erroDict in erros)

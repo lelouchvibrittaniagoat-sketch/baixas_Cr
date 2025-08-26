@@ -178,6 +178,25 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
                     var headersOk = excelService.ValidarHeaders();
                     var inicioDeDados = excelService.ValidarInicioDeNotas();
                     Composicao composicao = composicaoService.GetComposicao(workbook);
+                    var clsNegativos =  composicaoService.VerificarCLsNegativos(composicao.ComposicaoCr.Columns.ToArray());
+                    if (clsNegativos.Any())
+                    {
+                        var arquivoAtualizado = composicaoService.AtualizarPlanilhaComErrosPorLinha(
+                                memoryStream.ToArray(),
+                                clsNegativos // lista de ocorrências negativas já calculadas
+                            );
+
+                        // Salva temporariamente na pasta wwwroot/arquivos
+                        var nomeArquivoCriado = $"arquivo_{DateTime.Now:yyyyMMdd_HHmmss}{extensao}";
+                        var pasta = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "arquivos");
+                        if (!Directory.Exists(pasta)) Directory.CreateDirectory(pasta);
+                        var caminhoCompleto = Path.Combine(pasta, nomeArquivoCriado);
+                        await System.IO.File.WriteAllBytesAsync(caminhoCompleto, arquivoAtualizado);
+
+                        // Retorna a URL pública para o front
+                        var urlDownload = $"{Request.Scheme}://{Request.Host}/arquivos/{nomeArquivoCriado}";
+                        return Ok(new { Url = urlDownload });
+                    }
                     composicao.documentoCriados = new List<int>();
                     erroService.ValidarErroDeEstrutura(headersOk, apenasHaUmaSheet, inicioDeDados);
 

@@ -1,0 +1,4 @@
+wwwroot\arquivos\arquivo_20250825_210320..xlsm
+wwwroot\arquivos\arquivo_20250825_210402..xlsm
+wwwroot\arquivos\arquivo_20250825_210655.xlsm
+wwwroot\arquivos\Modelo_padrao_automacao_V1.9.5 (1).xlsm

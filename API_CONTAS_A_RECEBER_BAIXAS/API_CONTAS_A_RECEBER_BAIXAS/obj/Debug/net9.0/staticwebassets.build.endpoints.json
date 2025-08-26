@@ -1,5 +1,334 @@
 {
   "Version": 1,
   "ManifestType": "Build",
-  "Endpoints": []
+  "Endpoints": [
+    {
+      "Route": "arquivos/Modelo_padrao_automacao_V1.9.5 (1).xlsm",
+      "AssetFile": "arquivos/Modelo_padrao_automacao_V1.9.5 (1).xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x2ZaG0Ahpu0444/lA9VxVqb/aKOliOlevB58Wk5QbfU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:02:56 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x2ZaG0Ahpu0444/lA9VxVqb/aKOliOlevB58Wk5QbfU="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/Modelo_padrao_automacao_V1.9.5 (1).zl7xy8ksej.xlsm",
+      "AssetFile": "arquivos/Modelo_padrao_automacao_V1.9.5 (1).xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x2ZaG0Ahpu0444/lA9VxVqb/aKOliOlevB58Wk5QbfU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:02:56 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zl7xy8ksej"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x2ZaG0Ahpu0444/lA9VxVqb/aKOliOlevB58Wk5QbfU="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/Modelo_padrao_automacao_V1.9.5 (1).xlsm"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250825_210320..03j6mcxx44.xlsm",
+      "AssetFile": "arquivos/arquivo_20250825_210320..xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5IOsm2qtiPvOEW3isOI6CNtNgNJ9yM5+Lz7fZi2vo5k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:03:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "03j6mcxx44"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5IOsm2qtiPvOEW3isOI6CNtNgNJ9yM5+Lz7fZi2vo5k="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250825_210320..xlsm"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250825_210320..xlsm",
+      "AssetFile": "arquivos/arquivo_20250825_210320..xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5IOsm2qtiPvOEW3isOI6CNtNgNJ9yM5+Lz7fZi2vo5k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:03:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5IOsm2qtiPvOEW3isOI6CNtNgNJ9yM5+Lz7fZi2vo5k="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250825_210402..8tdn3ltwbz.xlsm",
+      "AssetFile": "arquivos/arquivo_20250825_210402..xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rMxQf6ULNsZoBecdB3iAXmFTH/40uwuP62uoDJPl/u4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:04:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8tdn3ltwbz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rMxQf6ULNsZoBecdB3iAXmFTH/40uwuP62uoDJPl/u4="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250825_210402..xlsm"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250825_210402..xlsm",
+      "AssetFile": "arquivos/arquivo_20250825_210402..xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rMxQf6ULNsZoBecdB3iAXmFTH/40uwuP62uoDJPl/u4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:04:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rMxQf6ULNsZoBecdB3iAXmFTH/40uwuP62uoDJPl/u4="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250825_210655.i2ly2c6cou.xlsm",
+      "AssetFile": "arquivos/arquivo_20250825_210655.xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110755"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KvEAStYAexdsXUS7xAHQV/kpL/XiE+Wmh0Y4r/CWQys=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:06:56 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i2ly2c6cou"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KvEAStYAexdsXUS7xAHQV/kpL/XiE+Wmh0Y4r/CWQys="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250825_210655.xlsm"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250825_210655.xlsm",
+      "AssetFile": "arquivos/arquivo_20250825_210655.xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110755"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KvEAStYAexdsXUS7xAHQV/kpL/XiE+Wmh0Y4r/CWQys=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 00:06:56 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KvEAStYAexdsXUS7xAHQV/kpL/XiE+Wmh0Y4r/CWQys="
+        }
+      ]
+    }
+  ]
 }

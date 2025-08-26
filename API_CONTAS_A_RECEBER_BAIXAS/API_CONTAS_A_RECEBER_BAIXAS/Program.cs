@@ -33,7 +33,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(); // You can configure SwaggerUI options here if needed
 }
 
-
+app.UseStaticFiles();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 
