@@ -17,11 +17,13 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
         public ExcelService excelService;
         public ErroService erroService;
         public ComposicaoService composicaoService;
+        public ServiceLayerService serviceLayerService;
 
 
         public ComposicaoController(ContasAReceberDbContext dbContext)
         {
              composicaoService= new ComposicaoService(dbContext);
+            serviceLayerService = new ServiceLayerService();
         }
         [HttpGet("BaixasRegistradasPelaAutomacao")]
         public async Task<IActionResult> Index( )
@@ -59,6 +61,14 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
         {
             List<String> contas = this.composicaoService.Context.BaixasCR.Select(x=>x.conta_contabil).Distinct().ToList();
             return Ok(contas);
+        }
+        [HttpGet("GetInformacoes")]
+        public async Task<IActionResult> GetInformacoes()
+        {
+            serviceLayerService.RealizarLogin();
+            await serviceLayerService.BaixarRelatorioNotasSaidaAsync(3, 900000);
+            await serviceLayerService.BaixarRelatorioNotasDevolucaoAsync(3, 900000);
+            return Ok();
         }
         [HttpGet("GetRedeCr")]
         public async Task<IActionResult> GetRedeCr()

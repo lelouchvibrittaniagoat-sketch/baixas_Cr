@@ -334,7 +334,36 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             workbook.SaveAs(outputStream);
             return outputStream.ToArray();
         }
+        public byte[] AtualizarPlanilhaComErrosPorLinhaProblemasNaNotaFiscal(
+                byte[] arquivoComposicao,
+                List<OcorrenciaNegativa> ocorrenciaNegativas)
+        {
+            using var memoryStream = new MemoryStream(arquivoComposicao);
+            using var workbook = new XLWorkbook(memoryStream);
+            var worksheet = workbook.Worksheet(1);
 
+            int lastRow = worksheet.LastRowUsed().RowNumber();
+
+            // Marca os erros na coluna J (10)
+            foreach (var occ in ocorrenciaNegativas)
+            {
+                if (occ.LinhaExcel <= lastRow)
+                {
+                    var celulaErro = worksheet.Cell(occ.LinhaExcel, 10); // coluna J
+                    var textoExistente = celulaErro.GetValue<string>();
+
+                    var novaMensagem = $"CL {occ.CL} valor líquido negativo ({occ.ValorLiquido})";
+                    if (!string.IsNullOrEmpty(textoExistente))
+                        celulaErro.Value = $"{textoExistente}; {novaMensagem}";
+                    else
+                        celulaErro.Value = novaMensagem;
+                }
+            }
+
+            using var outputStream = new MemoryStream();
+            workbook.SaveAs(outputStream);
+            return outputStream.ToArray();
+        }
         public (IXLWorksheet worksheetAtualizada, byte[] arquivoAtualizado) AtualizarPlanilhaComErros(
             byte[] arquivoComposicao,
             List<Dictionary<string, List<string>>> erros)

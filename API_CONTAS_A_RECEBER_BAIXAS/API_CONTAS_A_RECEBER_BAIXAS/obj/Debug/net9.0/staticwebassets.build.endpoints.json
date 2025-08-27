@@ -3,6 +3,88 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
+      "Route": "arquivos/25.08 CAVICCHIOLLI.c3l48yz3h7.xlsx",
+      "AssetFile": "arquivos/25.08 CAVICCHIOLLI.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16961"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yAPhiz4Xkvo4WAQ+xHHC+dfZ3OipqpRTsQJoG0kj3jo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 14:39:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c3l48yz3h7"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yAPhiz4Xkvo4WAQ+xHHC+dfZ3OipqpRTsQJoG0kj3jo="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/25.08 CAVICCHIOLLI.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/25.08 CAVICCHIOLLI.xlsx",
+      "AssetFile": "arquivos/25.08 CAVICCHIOLLI.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16961"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yAPhiz4Xkvo4WAQ+xHHC+dfZ3OipqpRTsQJoG0kj3jo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 14:39:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yAPhiz4Xkvo4WAQ+xHHC+dfZ3OipqpRTsQJoG0kj3jo="
+        }
+      ]
+    },
+    {
       "Route": "arquivos/Modelo_padrao_automacao_V1.9.5 (1).xlsm",
       "AssetFile": "arquivos/Modelo_padrao_automacao_V1.9.5 (1).xlsm",
       "Selectors": [],
@@ -81,6 +163,170 @@
         {
           "Name": "label",
           "Value": "arquivos/Modelo_padrao_automacao_V1.9.5 (1).xlsm"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.xlsm",
+      "AssetFile": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "284593"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6jkU+bk2EWK4gFiH/NJ2HCw/79qsRtu/+UsIe3NIaNk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 15:17:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6jkU+bk2EWK4gFiH/NJ2HCw/79qsRtu/+UsIe3NIaNk="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.ytugms0oka.xlsm",
+      "AssetFile": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "284593"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6jkU+bk2EWK4gFiH/NJ2HCw/79qsRtu/+UsIe3NIaNk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 15:17:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ytugms0oka"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6jkU+bk2EWK4gFiH/NJ2HCw/79qsRtu/+UsIe3NIaNk="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.xlsm"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620.vem70lpm95.xlsm",
+      "AssetFile": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620.xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "283374"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yQ4c0fA8N+OjEWwDH9MQ0+Rtehk8LGXXFynpjNgpktE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 15:18:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vem70lpm95"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yQ4c0fA8N+OjEWwDH9MQ0+Rtehk8LGXXFynpjNgpktE="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620.xlsm"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620.xlsm",
+      "AssetFile": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620.xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "283374"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yQ4c0fA8N+OjEWwDH9MQ0+Rtehk8LGXXFynpjNgpktE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 15:18:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yQ4c0fA8N+OjEWwDH9MQ0+Rtehk8LGXXFynpjNgpktE="
         }
       ]
     },
@@ -491,6 +737,1400 @@
         {
           "Name": "integrity",
           "Value": "sha256-f/utHZGiSUtV4qjna45qkSf3eZZM77Afr29Yl4FqAZ0="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_091010.hy7m4egemu.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_091010.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yc1xOfyRASIjjpz5fzuJu4iQRUUULAVBmStDfO9CStE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:10:10 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hy7m4egemu"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yc1xOfyRASIjjpz5fzuJu4iQRUUULAVBmStDfO9CStE="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_091010.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_091010.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_091010.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yc1xOfyRASIjjpz5fzuJu4iQRUUULAVBmStDfO9CStE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:10:10 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yc1xOfyRASIjjpz5fzuJu4iQRUUULAVBmStDfO9CStE="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092413.vox1kn4lo9.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092413.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zzAah913I1RfuvPI1ixPu7WA3Siu33y19kG1u22S1n4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:24:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vox1kn4lo9"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zzAah913I1RfuvPI1ixPu7WA3Siu33y19kG1u22S1n4="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_092413.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092413.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092413.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zzAah913I1RfuvPI1ixPu7WA3Siu33y19kG1u22S1n4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:24:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zzAah913I1RfuvPI1ixPu7WA3Siu33y19kG1u22S1n4="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092441.qdihz1kka1.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092441.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Tl4ApCJkpDdg2lNYDy1V77n0+1UyPjAoNjY79OmtIYk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:24:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qdihz1kka1"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Tl4ApCJkpDdg2lNYDy1V77n0+1UyPjAoNjY79OmtIYk="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_092441.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092441.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092441.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Tl4ApCJkpDdg2lNYDy1V77n0+1UyPjAoNjY79OmtIYk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:24:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Tl4ApCJkpDdg2lNYDy1V77n0+1UyPjAoNjY79OmtIYk="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092538.jbib71x378.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092538.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fwyZYhzH3tl8SPad8o+yVKL3oz+BR+aags2b50iBMVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:25:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jbib71x378"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fwyZYhzH3tl8SPad8o+yVKL3oz+BR+aags2b50iBMVk="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_092538.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092538.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092538.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fwyZYhzH3tl8SPad8o+yVKL3oz+BR+aags2b50iBMVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:25:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fwyZYhzH3tl8SPad8o+yVKL3oz+BR+aags2b50iBMVk="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092705.jlqv5f5pyo.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092705.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z+mXN6c0l0scM6KmIPlgD6oHk0dwmx8g/piZGRrYhqY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:27:05 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jlqv5f5pyo"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z+mXN6c0l0scM6KmIPlgD6oHk0dwmx8g/piZGRrYhqY="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_092705.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092705.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092705.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z+mXN6c0l0scM6KmIPlgD6oHk0dwmx8g/piZGRrYhqY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:27:05 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z+mXN6c0l0scM6KmIPlgD6oHk0dwmx8g/piZGRrYhqY="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092712.0osbdn5ga1.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092712.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IGHIbfPMJ0PqwB2RbQsPEBn+5e4xPBomtHZ3O2ONaVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:27:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0osbdn5ga1"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IGHIbfPMJ0PqwB2RbQsPEBn+5e4xPBomtHZ3O2ONaVU="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_092712.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092712.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092712.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IGHIbfPMJ0PqwB2RbQsPEBn+5e4xPBomtHZ3O2ONaVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:27:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IGHIbfPMJ0PqwB2RbQsPEBn+5e4xPBomtHZ3O2ONaVU="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092719.k05q98j4ex.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092719.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HGuY/03gPc7L9TkofqTYGyM+I6vmKr+cI8IU74ZEr8E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:27:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k05q98j4ex"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HGuY/03gPc7L9TkofqTYGyM+I6vmKr+cI8IU74ZEr8E="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_092719.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092719.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092719.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HGuY/03gPc7L9TkofqTYGyM+I6vmKr+cI8IU74ZEr8E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:27:19 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HGuY/03gPc7L9TkofqTYGyM+I6vmKr+cI8IU74ZEr8E="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092825.gh1hux8n9g.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092825.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PJxq9Wsu83yPf29rB03fZBBHB/uAQPpRADNTF6gdBLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:28:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gh1hux8n9g"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PJxq9Wsu83yPf29rB03fZBBHB/uAQPpRADNTF6gdBLk="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_092825.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092825.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092825.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PJxq9Wsu83yPf29rB03fZBBHB/uAQPpRADNTF6gdBLk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:28:25 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PJxq9Wsu83yPf29rB03fZBBHB/uAQPpRADNTF6gdBLk="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092915.1cfoxusapq.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092915.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oZyjQQaB3pl0fm6riqb2oou3Gj+6FgtFf3BuMKlyVfQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:29:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1cfoxusapq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oZyjQQaB3pl0fm6riqb2oou3Gj+6FgtFf3BuMKlyVfQ="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_092915.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_092915.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_092915.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oZyjQQaB3pl0fm6riqb2oou3Gj+6FgtFf3BuMKlyVfQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:29:15 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oZyjQQaB3pl0fm6riqb2oou3Gj+6FgtFf3BuMKlyVfQ="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_093229.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_093229.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NyVwcKwgrBd53XegVdFcojyXE09pOu4vBFPUE3lQmws=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:32:29 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NyVwcKwgrBd53XegVdFcojyXE09pOu4vBFPUE3lQmws="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_093229.zhnpely27p.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_093229.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NyVwcKwgrBd53XegVdFcojyXE09pOu4vBFPUE3lQmws=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:32:29 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zhnpely27p"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NyVwcKwgrBd53XegVdFcojyXE09pOu4vBFPUE3lQmws="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_093229.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_093304.mqjbibk3z5.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_093304.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UmmWaELRqFX/nJn+lVroooCN1jfa0RxcGjDnPEVmFUA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:33:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mqjbibk3z5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UmmWaELRqFX/nJn+lVroooCN1jfa0RxcGjDnPEVmFUA="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_093304.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_093304.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_093304.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UmmWaELRqFX/nJn+lVroooCN1jfa0RxcGjDnPEVmFUA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:33:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UmmWaELRqFX/nJn+lVroooCN1jfa0RxcGjDnPEVmFUA="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_093503.fgjtq2qv3o.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_093503.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vwkJJHtknREJSkpA111EjBw4nhhgb5uo7opbFJkY+9I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:35:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fgjtq2qv3o"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vwkJJHtknREJSkpA111EjBw4nhhgb5uo7opbFJkY+9I="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_093503.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_093503.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_093503.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vwkJJHtknREJSkpA111EjBw4nhhgb5uo7opbFJkY+9I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:35:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vwkJJHtknREJSkpA111EjBw4nhhgb5uo7opbFJkY+9I="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_093542.ff1psfcoom.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_093542.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hTQWXDNjYNf/4nlqkOAOYGzh1fhOQmVV/YE/TxFTwXg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:35:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ff1psfcoom"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hTQWXDNjYNf/4nlqkOAOYGzh1fhOQmVV/YE/TxFTwXg="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_093542.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_093542.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_093542.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11780"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hTQWXDNjYNf/4nlqkOAOYGzh1fhOQmVV/YE/TxFTwXg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 12:35:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hTQWXDNjYNf/4nlqkOAOYGzh1fhOQmVV/YE/TxFTwXg="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_115645.e8ifgoy5s7.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_115645.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11089"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8iVsV7mkquaEEQL8oGdZHDJm96H97tNNOGSzRG7XhoU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 14:56:45 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e8ifgoy5s7"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8iVsV7mkquaEEQL8oGdZHDJm96H97tNNOGSzRG7XhoU="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_115645.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_115645.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_115645.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11089"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8iVsV7mkquaEEQL8oGdZHDJm96H97tNNOGSzRG7XhoU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 14:56:45 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8iVsV7mkquaEEQL8oGdZHDJm96H97tNNOGSzRG7XhoU="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_115714.3hm29j8xg2.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_115714.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15371"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R3MpFmNvI+AR/3dAUQ4QMasMT6HCtYZWz7wn3tdD5Gg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 14:57:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3hm29j8xg2"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R3MpFmNvI+AR/3dAUQ4QMasMT6HCtYZWz7wn3tdD5Gg="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250826_115714.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250826_115714.xlsx",
+      "AssetFile": "arquivos/arquivo_20250826_115714.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15371"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R3MpFmNvI+AR/3dAUQ4QMasMT6HCtYZWz7wn3tdD5Gg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 26 Aug 2025 14:57:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R3MpFmNvI+AR/3dAUQ4QMasMT6HCtYZWz7wn3tdD5Gg="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250827_100537.wwmvxcpk01.xlsx",
+      "AssetFile": "arquivos/arquivo_20250827_100537.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QHmSaCMYQkeOAEwouUlpWQtkEn29xFyjLxtPe3f9/Uk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 27 Aug 2025 13:05:37 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wwmvxcpk01"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QHmSaCMYQkeOAEwouUlpWQtkEn29xFyjLxtPe3f9/Uk="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250827_100537.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250827_100537.xlsx",
+      "AssetFile": "arquivos/arquivo_20250827_100537.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QHmSaCMYQkeOAEwouUlpWQtkEn29xFyjLxtPe3f9/Uk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 27 Aug 2025 13:05:37 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QHmSaCMYQkeOAEwouUlpWQtkEn29xFyjLxtPe3f9/Uk="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250827_152116.falehn67am.xlsx",
+      "AssetFile": "arquivos/arquivo_20250827_152116.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R/DypgnNHnlWNDSk8tT85IlJ7Qi/JfX6uwRNJqRIOPY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 27 Aug 2025 18:21:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "falehn67am"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R/DypgnNHnlWNDSk8tT85IlJ7Qi/JfX6uwRNJqRIOPY="
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250827_152116.xlsx"
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250827_152116.xlsx",
+      "AssetFile": "arquivos/arquivo_20250827_152116.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R/DypgnNHnlWNDSk8tT85IlJ7Qi/JfX6uwRNJqRIOPY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 27 Aug 2025 18:21:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R/DypgnNHnlWNDSk8tT85IlJ7Qi/JfX6uwRNJqRIOPY="
         }
       ]
     }

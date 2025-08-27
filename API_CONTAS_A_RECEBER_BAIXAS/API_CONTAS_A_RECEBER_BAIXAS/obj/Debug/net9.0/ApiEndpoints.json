@@ -79,6 +79,16 @@
   },
   {
     "ContainingType": "API_CONTAS_A_RECEBER_BAIXAS.Controllers.ComposicaoController",
+    "Method": "GetInformacoes",
+    "RelativePath": "Composicao/GetInformacoes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_CONTAS_A_RECEBER_BAIXAS.Controllers.ComposicaoController",
     "Method": "GetRedeCr",
     "RelativePath": "Composicao/GetRedeCr",
     "HttpMethod": "GET",

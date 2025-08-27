@@ -29,6 +29,18 @@
         }
       }
     },
+    "/Composicao/GetInformacoes": {
+      "get": {
+        "tags": [
+          "Composicao"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/Composicao/GetRedeCr": {
       "get": {
         "tags": [
