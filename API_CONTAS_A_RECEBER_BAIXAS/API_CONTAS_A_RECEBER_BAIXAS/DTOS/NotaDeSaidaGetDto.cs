@@ -6,7 +6,7 @@
         public string DocDate { get; set; }
         public int BPLId { get; set; }
         public string CardCode { get; set; }
-        public object FatherCard { get; set; }
+        public string FatherCard { get; set; }
         public string DocStatus { get; set; }
         public int DocNum { get; set; }
         public float Saldo_disponivel { get; set; }

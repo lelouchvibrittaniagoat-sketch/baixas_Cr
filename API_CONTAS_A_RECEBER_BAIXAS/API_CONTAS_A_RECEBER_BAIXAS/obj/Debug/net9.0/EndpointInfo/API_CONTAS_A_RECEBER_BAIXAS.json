@@ -29,10 +29,36 @@
         }
       }
     },
-    "/Composicao/GetInformacoes": {
+    "/Composicao/AtualizarRelatorioDeBaixas": {
       "get": {
         "tags": [
           "Composicao"
+        ],
+        "parameters": [
+          {
+            "name": "idFilial",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "DocMinimoSaida",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "DocMinimoDevolucao",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {

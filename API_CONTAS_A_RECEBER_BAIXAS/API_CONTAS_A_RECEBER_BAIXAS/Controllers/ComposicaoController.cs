@@ -18,12 +18,13 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
         public ErroService erroService;
         public ComposicaoService composicaoService;
         public ServiceLayerService serviceLayerService;
-
+        public RelatoriosService relatoriosService;
 
         public ComposicaoController(ContasAReceberDbContext dbContext)
         {
              composicaoService= new ComposicaoService(dbContext);
             serviceLayerService = new ServiceLayerService();
+            relatoriosService = new RelatoriosService(dbContext);
         }
         [HttpGet("BaixasRegistradasPelaAutomacao")]
         public async Task<IActionResult> Index( )
@@ -62,12 +63,14 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
             List<String> contas = this.composicaoService.Context.BaixasCR.Select(x=>x.conta_contabil).Distinct().ToList();
             return Ok(contas);
         }
-        [HttpGet("GetInformacoes")]
-        public async Task<IActionResult> GetInformacoes()
+        [HttpGet("AtualizarRelatorioDeBaixas")]
+        public async Task<IActionResult> GetInformacoes(int idFilial, int DocMinimoSaida, int DocMinimoDevolucao)
         {
+            Console.WriteLine("Baixando dados atuais e salvando no postgres! ATENÇÃO, ALTAS CHANCES DE DAR PROBLEMA, CASO HAJA MULTIPLAS NOTAS. CASO VOCÊ TENHA ALGUM PROBLEMA DE REQUISIÇÕES, REVEJA ESSE CONTROLLER TOTALMENTE!");
             serviceLayerService.RealizarLogin();
-            await serviceLayerService.BaixarRelatorioNotasSaidaAsync(3, 900000);
-            await serviceLayerService.BaixarRelatorioNotasDevolucaoAsync(3, 900000);
+            List<NotaDeSaidaGetDto> notasSaida =  await serviceLayerService.BaixarRelatorioNotasSaidaAsync(3, 900000);
+            List<NotaDeDevolucaoGetDto> notaDeDevolucao =  await serviceLayerService.BaixarRelatorioNotasDevolucaoAsync(3, 250000);
+            await relatoriosService.SalvarDados(notaDeDevolucao,notasSaida);
             return Ok();
         }
         [HttpGet("GetRedeCr")]
@@ -188,6 +191,8 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
                     var headersOk = excelService.ValidarHeaders();
                     var inicioDeDados = excelService.ValidarInicioDeNotas();
                     Composicao composicao = composicaoService.GetComposicao(workbook);
+                    Dictionary<string,int> keyValuePairs =  composicaoService.GetDocsMinimos(composicao.ComposicaoCr);
+                    
                     var clsNegativos =  composicaoService.VerificarCLsNegativos(composicao.ComposicaoCr.Columns.ToArray());
                     if (clsNegativos.Any())
                     {
@@ -215,6 +220,17 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
                         return BadRequest("Verifique se arquivo possui apenas 1 sheet e se os dados de notas começam na linha 10! ");
 
                     }
+                    if (keyValuePairs.TryGetValue("NS", out int ns) && keyValuePairs.TryGetValue("DS", out int ds))
+                    {
+                        Filiais filial = composicaoService.incomingPaymentsService.GetIdEmpresaPorNome(composicao.Filial);
+
+                        await relatoriosService.AtualizarRelatorioDeBaixas(filial.Id, keyValuePairs["NS"], keyValuePairs["DS"]);
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Chaves 'NS' ou 'DS' não encontradas no dicionário.");
+                    }
                     BaixasCR baixasCR =  composicaoService.SalvarInstanciaBaixa(memoryStream.ToArray(), erroService.GetListaDeErrosString(), nomeArquivo, composicao, extensao, null, contaContabilEfetiva);
 
                     var headersComProblema = headersOk.Where(x => x.Value != "OK").Select(x => x.Key);
@@ -230,7 +246,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
                     {
                         var errosString = JsonSerializer.Serialize (composicaoService.listaComErrosNotasJson);
                         composicaoService.SalvarInstanciaBaixa(null, errosString, nomeArquivo, composicao, extensao, composicaoService.listaComErrosNotasJson, contaContabilEfetiva);
-                        return BadRequest($"{erroService.GetListaDeErrosTratadosString()}");
+                        return BadRequest(new { Erros = $"{erroService.GetListaDeErrosTratadosString()}" });
 
                     }
                     if (erroService.listaComErros.Count> 0)
@@ -238,7 +254,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
                         var errosString = string.Join(", ", erroService.listaComErros);
                         erroService.CriarDevolutivaDeErrosBaseadoEmDePara();
                         composicaoService.SalvarInstanciaBaixa(null, erroService.GetListaDeErrosTratadosString(), nomeArquivo,composicao, extensao,composicaoService.listaComErrosNotasJson, contaContabilEfetiva);
-                        return BadRequest($"{erroService.GetListaDeErrosTratadosString()}");
+                        return BadRequest(new { Erros = $"{erroService.GetListaDeErrosTratadosString()}" });
 
                     }
                     else

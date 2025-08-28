@@ -42,7 +42,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
         }
         public async Task<Composicao> MainExecution(Composicao composicao, List<String> errosEncontrados, string ContaContabil, BaixasCR baixasCR)
         {
-            serviceLayerService.RealizarLogin();
+            await serviceLayerService.RealizarLogin();
             incomingPaymentsService.DataFrameComposicao = composicao.ComposicaoCr;
             var notasFiscaisComposicao = incomingPaymentsService.CriarDictComClsESuasNotas();
             Filiais filialEmQuestao = incomingPaymentsService.GetIdEmpresaPorNome(composicao.Filial);
@@ -269,7 +269,36 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             // Retornar como DateOnly
             return DateOnly.FromDateTime(primeiroDomingo);
         }
+        public Dictionary<string,int> GetDocsMinimos(DataFrame dataFrame)
+        {
+            var numeroInternoCol = dataFrame.Columns["NUMERO INTERNO"] as StringDataFrameColumn;
+            var tipoDocCol = dataFrame.Columns["TIPO DO DOCUMENTO"] as StringDataFrameColumn;
 
+            var rowCount = dataFrame.Rows.Count;
+
+            // Dicionário com chave = Tipo do Documento, valor = menor Numero Interno (convertido pra int)
+            var minNumeroPorTipoDoc = new Dictionary<string, int>();
+
+            for (int i = 0; i < rowCount; i++)
+            {
+                var tipoDoc = tipoDocCol[i];
+                if (int.TryParse(numeroInternoCol[i], out int numeroInterno))
+                {
+                    if (minNumeroPorTipoDoc.TryGetValue(tipoDoc, out int minAtual))
+                    {
+                        if (numeroInterno < minAtual)
+                            minNumeroPorTipoDoc[tipoDoc] = numeroInterno;
+                    }
+                    else
+                    {
+                        minNumeroPorTipoDoc.Add(tipoDoc, numeroInterno);
+                    }
+                }
+            }
+
+            // Exibe os mínimos encontrados
+            return minNumeroPorTipoDoc;
+        }
         public DataFrameColumn[] GetNotasFiscais(IXLWorksheet worksheet, int lastRow)
         {
             // ✅ Cabeçalhos fixos

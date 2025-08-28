@@ -34,7 +34,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             }
             return false;
         }
-        public void RealizarLogin()
+        public async Task RealizarLogin()
         {
             var loginData = new
             {
@@ -52,7 +52,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                 BaseAddress = new Uri("https://picamphdb.b1cloud.com.br:50000/b1s/v2/"),
                 Timeout = TimeSpan.FromMinutes(5)
             };
-            var httpComLogin = httpClient.PostAsync(httpClient.BaseAddress + "Login", content).Result;
+            var httpComLogin = await httpClient.PostAsync(httpClient.BaseAddress + "Login", content);
             //http.DefaultRequestHeaders.Add("Prefer", "odata.maxpagesize=13000");
             if (httpComLogin.IsSuccessStatusCode)
             {
@@ -68,17 +68,23 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             Console.WriteLine(result.Content.ReadAsStringAsync().GetAwaiter().GetResult());
             return result;
         }
+        public  async Task LogOut(string Json)
+        {
+            var result =  await httpClient.PostAsync("Logout",null);
+            
+        }
         public async Task<List<NotaDeSaidaGetDto>> BaixarRelatorioNotasSaidaAsync(int idFilial, int documentoMinimo)
         {
-            string baseUrl = $"https://picamphdb.b1cloud.com.br:50000/b1s/v2/sml.svc/0028_CV_NOTAS_DE_SAIDA_CR_AUTParameters(nro_doc_minimo_nf_saida={documentoMinimo},p_filial={idFilial})/0028_CV_NOTAS_DE_SAIDA_CR_AUT";
-            string nextLink = baseUrl;
+            string baseUrl = $"https://picamphdb.b1cloud.com.br:50000/b1s/v2/sml.svc/";
+            string nextLink = $"0028_CV_NOTAS_DE_SAIDA_CR_AUTParameters(nro_doc_minimo_nf_saida={documentoMinimo},p_filial={idFilial})/0028_CV_NOTAS_DE_SAIDA_CR_AUT";
 
             var resultadoFinal = new List<NotaDeSaidaGetDto>();
 
             
             {
                 httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-                httpClient.DefaultRequestHeaders.Add("Prefer", "odata.maxpagesize=25000");
+                httpClient.DefaultRequestHeaders.Remove("Prefer");
+                httpClient.DefaultRequestHeaders.Add("Prefer", "odata.maxpagesize=20000");
 
                 while (!string.IsNullOrEmpty(nextLink))
                 {
@@ -90,7 +96,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                     {
                         try
                         {
-                            response = await httpClient.GetAsync(nextLink);
+                            response = await httpClient.GetAsync($"{baseUrl}{nextLink}");
                             response.EnsureSuccessStatusCode();
                             break;
                         }
@@ -135,17 +141,18 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             return resultadoFinal;
         }
 
-        public async Task<List<NotaDeSaidaGetDto>> BaixarRelatorioNotasDevolucaoAsync(int idFilial, int documentoMinimo)
+        public async Task<List<NotaDeDevolucaoGetDto>> BaixarRelatorioNotasDevolucaoAsync(int idFilial, int documentoMinimo)
         {
-            string baseUrl = $"https://suaapi.com/0029_CV_NOTAS_DE_DEVOLUCAO_CR_AUTParameters(nro_doc_minimo_nf_saida={documentoMinimo},p_filial={idFilial})/0029_CV_NOTAS_DE_DEVOLUCAO_CR_AUT";
-            string nextLink = baseUrl;
+            string baseUrl = $"https://picamphdb.b1cloud.com.br:50000/b1s/v2/sml.svc/";
+            string nextLink = $"0029_CV_NOTAS_DE_DEVOLUCAO_CR_AUTParameters(nro_doc_minimo_nf_dev={documentoMinimo},p_filial={idFilial})/0029_CV_NOTAS_DE_DEVOLUCAO_CR_AUT";
 
-            var resultadoFinal = new List<NotaDeSaidaGetDto>();
+            var resultadoFinal = new List<NotaDeDevolucaoGetDto>();
 
 
             {
                 httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-                httpClient.DefaultRequestHeaders.Add("Prefer", "odata.maxpagesize=25000");
+                httpClient.DefaultRequestHeaders.Remove("Prefer");
+                httpClient.DefaultRequestHeaders.Add("Prefer", "odata.maxpagesize=20000");
 
                 while (!string.IsNullOrEmpty(nextLink))
                 {
@@ -157,7 +164,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                     {
                         try
                         {
-                            response = await httpClient.GetAsync(nextLink);
+                            response = await httpClient.GetAsync($"{baseUrl}{nextLink}");
                             response.EnsureSuccessStatusCode();
                             break;
                         }
@@ -183,7 +190,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
 
                     if (root.TryGetProperty("value", out JsonElement items))
                     {
-                        var pageData = JsonSerializer.Deserialize<List<NotaDeSaidaGetDto>>(items.GetRawText());
+                        var pageData = JsonSerializer.Deserialize<List<NotaDeDevolucaoGetDto>>(items.GetRawText());
                         if (pageData != null)
                             resultadoFinal.AddRange(pageData);
                     }

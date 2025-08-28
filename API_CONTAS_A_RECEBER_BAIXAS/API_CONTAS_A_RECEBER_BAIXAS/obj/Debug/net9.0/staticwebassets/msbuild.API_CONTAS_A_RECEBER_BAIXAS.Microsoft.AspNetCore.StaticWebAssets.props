@@ -414,6 +414,114 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250827_152116.xlsx'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250828_163706.xlsx'))">
+      <SourceType>Package</SourceType>
+      <SourceId>API_CONTAS_A_RECEBER_BAIXAS</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/API_CONTAS_A_RECEBER_BAIXAS</BasePath>
+      <RelativePath>arquivos/arquivo_20250828_163706.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>yzejph7jzs</Fingerprint>
+      <Integrity>rp/O/cd7bl0TM0HxmfSauLwEh1cl0uTzThRUHa0RcGU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250828_163706.xlsx'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250828_164426.xlsx'))">
+      <SourceType>Package</SourceType>
+      <SourceId>API_CONTAS_A_RECEBER_BAIXAS</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/API_CONTAS_A_RECEBER_BAIXAS</BasePath>
+      <RelativePath>arquivos/arquivo_20250828_164426.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pimcuaq39i</Fingerprint>
+      <Integrity>/1xo+b0eoB+fR6doB37ALyTwe+y1EgiFwButbHZ1s00=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250828_164426.xlsx'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250828_171317.xlsx'))">
+      <SourceType>Package</SourceType>
+      <SourceId>API_CONTAS_A_RECEBER_BAIXAS</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/API_CONTAS_A_RECEBER_BAIXAS</BasePath>
+      <RelativePath>arquivos/arquivo_20250828_171317.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4hk5lyeqnd</Fingerprint>
+      <Integrity>GKwnHDQH963XtQFd/AxzRDLB3+kC2UaTVRNE6joYxyQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250828_171317.xlsx'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250828_171326.xlsx'))">
+      <SourceType>Package</SourceType>
+      <SourceId>API_CONTAS_A_RECEBER_BAIXAS</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/API_CONTAS_A_RECEBER_BAIXAS</BasePath>
+      <RelativePath>arquivos/arquivo_20250828_171326.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>a42cfrayrx</Fingerprint>
+      <Integrity>Ro9NVx5GKBql5x38jkuwI2jADaK16KNDRAlcQ5+T6Nk=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250828_171326.xlsx'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250828_173742.xlsx'))">
+      <SourceType>Package</SourceType>
+      <SourceId>API_CONTAS_A_RECEBER_BAIXAS</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/API_CONTAS_A_RECEBER_BAIXAS</BasePath>
+      <RelativePath>arquivos/arquivo_20250828_173742.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4e2mqpqjip</Fingerprint>
+      <Integrity>ZIzP6pdsGqemhhK3q9ioTHDTdAPg4xmWGT6Uth9Ly+M=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250828_173742.xlsx'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250828_173801.xlsx'))">
+      <SourceType>Package</SourceType>
+      <SourceId>API_CONTAS_A_RECEBER_BAIXAS</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/API_CONTAS_A_RECEBER_BAIXAS</BasePath>
+      <RelativePath>arquivos/arquivo_20250828_173801.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>qu3mqjj2t3</Fingerprint>
+      <Integrity>/gxIbzyJFeL2NmRqdYr3uDwX5Wo6++B+ZGxud7zZdeg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250828_173801.xlsx'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\Modelo_padrao_automacao_V1.9.5 (1).xlsm'))">
       <SourceType>Package</SourceType>
       <SourceId>API_CONTAS_A_RECEBER_BAIXAS</SourceId>
