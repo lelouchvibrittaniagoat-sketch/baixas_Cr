@@ -88,17 +88,17 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
 
             await Context.SaveChangesAsync();
         }
-        public async Task AtualizarRelatorioDeBaixas(int idFilial, int? docMinimoSaida, int? docMinimoDevolucao)
+        public async Task AtualizarRelatorioDeBaixas(int idFilial, int docMinimoSaida, int docMinimoDevolucao)
         {
             Console.WriteLine("Baixando dados atuais e salvando no postgres! ATENÇÃO...");
             await  ServiceLayerService.RealizarLogin();
-            if (docMinimoSaida.HasValue && docMinimoSaida.Value > 0)
+            if ( docMinimoSaida > 0)
             {
-                notaDeSaidaGetDtos = await ServiceLayerService.BaixarRelatorioNotasSaidaAsync(idFilial, docMinimoSaida.Value);
+                notaDeSaidaGetDtos = await ServiceLayerService.BaixarRelatorioNotasSaidaAsync(idFilial, docMinimoSaida);
             }
-            if (docMinimoDevolucao.HasValue && docMinimoDevolucao.Value > 0)
+            if ( docMinimoDevolucao > 0)
             {
-                notaDeDevolucaoGetDtos = await ServiceLayerService.BaixarRelatorioNotasDevolucaoAsync(idFilial, docMinimoDevolucao.Value);
+                notaDeDevolucaoGetDtos = await ServiceLayerService.BaixarRelatorioNotasDevolucaoAsync(idFilial, docMinimoDevolucao);
             }
             //await SalvarDados(notaDeDevolucao, notasSaida);
         }

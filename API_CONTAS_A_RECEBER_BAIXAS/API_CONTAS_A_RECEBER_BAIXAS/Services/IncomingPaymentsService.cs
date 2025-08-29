@@ -66,7 +66,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                             decimal liquido2Casas = (decimal)Math.Round((valorBruto - ValorDesconto),2);
                             var diferenca = liquido2Casas - Math.Round(appliedSysValue, 2, MidpointRounding.AwayFromZero);
 
-                            NotaFiscaisDeSaida notaSaidaConvertido = notaFiscalSaida.NotaFiscalAnalisadaBanco as NotaFiscaisDeSaida;
+                            NotaDeSaidaGetDto notaSaidaConvertido = notaFiscalSaida.NotaFiscalAnalisadaBanco as NotaDeSaidaGetDto;
                             //Essa opção é parar o sistema ser capaz de aplicar juros e não entender eles como se fosse um desconto
                             if(ValorDesconto < 0)
                             {
@@ -74,7 +74,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                             }
                             PaymentInvoices paymentInvoice = new PaymentInvoices
                             {
-                                DocEntry = int.Parse(notaSaidaConvertido.DocEntry),
+                                DocEntry = notaSaidaConvertido.DocEntry,
                                 InvoiceType = "it_Invoice",
                                 SumApplied = Math.Round(appliedSysValue, 2, MidpointRounding.AwayFromZero) + diferenca,
                                 TotalDiscount =ValorDesconto
@@ -106,10 +106,10 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                         decimal liquido2Casas = (decimal)Math.Round((valorBruto - ValorDesconto), 2);
                         var diferenca = liquido2Casas - Math.Round(appliedSysValue, 2, MidpointRounding.AwayFromZero);
 
-                        NotasFiscaisDevolucao notaDevolucaoConvertido = notaFiscalDevolucao.NotaFiscalAnalisadaBanco as NotasFiscaisDevolucao;
+                        NotaDeDevolucaoGetDto notaDevolucaoConvertido = notaFiscalDevolucao.NotaFiscalAnalisadaBanco as NotaDeDevolucaoGetDto;
                         PaymentInvoices paymentInvoice = new PaymentInvoices
                         {
-                            DocEntry = int.Parse(notaDevolucaoConvertido.DocEntry),
+                            DocEntry = notaDevolucaoConvertido.DocEntry,
                             InvoiceType = "it_CredItnote",
                             SumApplied = Math.Round(appliedSysValue, 2, MidpointRounding.AwayFromZero) + diferenca,
                             TotalDiscount = ValorDesconto

@@ -221,14 +221,19 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
                         return BadRequest("Verifique se arquivo possui apenas 1 sheet e se os dados de notas começam na linha 10! ");
 
                     }
-
-                    if (keyValuePairs.TryGetValue("NS", out int ns) || keyValuePairs.TryGetValue("DS", out int ds))
+                    Filiais filial = composicaoService.incomingPaymentsService.GetIdEmpresaPorNome(composicao.Filial);
+                    if(filial == null)
                     {
-                        Filiais filial = composicaoService.incomingPaymentsService.GetIdEmpresaPorNome(composicao.Filial);
-
-                        await relatoriosService.AtualizarRelatorioDeBaixas(filial.Id, keyValuePairs["NS"], keyValuePairs["DS"]);
-                        
+                        return BadRequest("Filial incorreta");
                     }
+                    int ns = keyValuePairs.TryGetValue("NS", out int tempNs) ? tempNs : 0;
+                    int ds = keyValuePairs.TryGetValue("DS", out int tempDs) ? tempDs : 0;
+
+                    
+
+                    await relatoriosService.AtualizarRelatorioDeBaixas(filial.IdSap, ns, ds);
+                        
+                    
 
 
                     composicao.notaDeSaidaGetDtos = this.relatoriosService.notaDeSaidaGetDtos;
