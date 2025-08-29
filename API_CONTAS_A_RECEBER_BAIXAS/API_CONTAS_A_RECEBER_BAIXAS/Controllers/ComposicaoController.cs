@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using Apache.Arrow;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
+using Microsoft.EntityFrameworkCore.Update.Internal;
 
 namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
 {
@@ -220,17 +221,19 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
                         return BadRequest("Verifique se arquivo possui apenas 1 sheet e se os dados de notas começam na linha 10! ");
 
                     }
-                    if (keyValuePairs.TryGetValue("NS", out int ns) && keyValuePairs.TryGetValue("DS", out int ds))
+
+                    if (keyValuePairs.TryGetValue("NS", out int ns) || keyValuePairs.TryGetValue("DS", out int ds))
                     {
                         Filiais filial = composicaoService.incomingPaymentsService.GetIdEmpresaPorNome(composicao.Filial);
 
                         await relatoriosService.AtualizarRelatorioDeBaixas(filial.Id, keyValuePairs["NS"], keyValuePairs["DS"]);
+                        
+                    }
 
-                    }
-                    else
-                    {
-                        Console.WriteLine("Chaves 'NS' ou 'DS' não encontradas no dicionário.");
-                    }
+
+                    composicao.notaDeSaidaGetDtos = this.relatoriosService.notaDeSaidaGetDtos;
+                    composicao.notaDeDevolucaoGetDtos = this.relatoriosService.notaDeDevolucaoGetDtos;
+
                     BaixasCR baixasCR =  composicaoService.SalvarInstanciaBaixa(memoryStream.ToArray(), erroService.GetListaDeErrosString(), nomeArquivo, composicao, extensao, null, contaContabilEfetiva);
 
                     var headersComProblema = headersOk.Where(x => x.Value != "OK").Select(x => x.Key);
@@ -240,7 +243,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
                         var headersLista = string.Join(", ", headersComProblema);
                         return BadRequest($"Os headers:{headersLista} não condizem com os cabeçalhos válidos. Reveja os nomes das colunas na composição");
                     }
-
+                    
                     Composicao composicao1ComDocs = await  composicaoService.MainExecution(composicao, erroService.listaComErros, contaContabilEfetiva, baixasCR);
                     if (composicaoService.listaComErrosNotasJson.Count > 0)
                     {

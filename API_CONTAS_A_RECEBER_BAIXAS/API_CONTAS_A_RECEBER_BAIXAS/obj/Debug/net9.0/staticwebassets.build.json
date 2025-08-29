@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wlVT+Ho33JRHBNVeF4dUO6M5cJXkzJbR+p1XNJQ3Gzw=",
+  "Hash": "V3AtHWyU639lcGo85dNp9TIsggkmHFZTzTzxUgBqce4=",
   "Source": "API_CONTAS_A_RECEBER_BAIXAS",
   "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "API_CONTAS_A_RECEBER_BAIXAS\\wwwroot",
       "Source": "API_CONTAS_A_RECEBER_BAIXAS",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\25.08 CAVICCHIOLLI.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\25.08 CAVICCHIOLLI.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/25.08 CAVICCHIOLLI#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\25.08 CAVICCHIOLLI.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210320..xlsm",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210320..xlsm",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250825_210320.#[.{fingerprint}]?.xlsm",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250825_210320..xlsm"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210402..xlsm",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210402..xlsm",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250825_210402.#[.{fingerprint}]?.xlsm",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250825_210402..xlsm"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210655.xlsm",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210655.xlsm",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250825_210655#[.{fingerprint}]?.xlsm",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250825_210655.xlsm"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210921.xlsm",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210921.xlsm",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250825_210921#[.{fingerprint}]?.xlsm",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250825_210921.xlsm"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_090542.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_090542.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_090542#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_090542.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_091010.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_091010.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_091010#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_091010.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092413.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092413.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_092413#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_092413.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092441.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092441.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_092441#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_092441.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092538.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092538.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_092538#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_092538.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092705.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092705.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_092705#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_092705.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092712.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092712.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_092712#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_092712.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092719.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092719.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_092719#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_092719.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092825.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092825.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_092825#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_092825.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092915.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092915.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_092915#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_092915.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093229.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093229.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_093229#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_093229.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093304.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093304.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_093304#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_093304.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093503.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093503.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_093503#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_093503.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093542.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093542.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_093542#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_093542.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_115645.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_115645.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_115645#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_115645.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_115714.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_115714.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250826_115714#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250826_115714.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250827_100537.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250827_100537.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250827_100537#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250827_100537.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250827_152116.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250827_152116.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250827_152116#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250827_152116.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_163706.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_163706.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250828_163706#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250828_163706.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_164426.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_164426.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250828_164426#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250828_164426.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_171317.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_171317.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250828_171317#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250828_171317.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_171326.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_171326.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250828_171326#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250828_171326.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_173742.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_173742.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250828_173742#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250828_173742.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_173801.xlsx",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_173801.xlsx",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/arquivo_20250828_173801#[.{fingerprint}]?.xlsx",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250828_173801.xlsx"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\Modelo_padrao_automacao_V1.9.5 (1).xlsm",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\Modelo_padrao_automacao_V1.9.5 (1).xlsm",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/Modelo_padrao_automacao_V1.9.5 (1)#[.{fingerprint}]?.xlsm",
       "AssetKind": "All",
@@ -647,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\Modelo_padrao_automacao_V1.9.5 (1).xlsm"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.xlsm",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.xlsm",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612#[.{fingerprint}]?.xlsm",
       "AssetKind": "All",
@@ -668,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\arquivos\\RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.xlsm"
     },
     {
-      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620.xlsm",
+      "Identity": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620.xlsm",
       "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
       "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
       "RelativePath": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620#[.{fingerprint}]?.xlsm",
       "AssetKind": "All",
@@ -692,7 +692,7 @@
   "Endpoints": [
     {
       "Route": "arquivos/25.08 CAVICCHIOLLI.c3l48yz3h7.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\25.08 CAVICCHIOLLI.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\25.08 CAVICCHIOLLI.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -713,7 +713,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 14:39:03 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -737,7 +737,7 @@
     },
     {
       "Route": "arquivos/25.08 CAVICCHIOLLI.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\25.08 CAVICCHIOLLI.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\25.08 CAVICCHIOLLI.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -758,7 +758,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 14:39:03 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -774,7 +774,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250825_210320..03j6mcxx44.xlsm",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210320..xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210320..xlsm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -795,7 +795,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
+          "Value": "Tue, 26 Aug 2025 00:03:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -819,7 +819,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250825_210320..xlsm",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210320..xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210320..xlsm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -840,7 +840,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
+          "Value": "Tue, 26 Aug 2025 00:03:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -856,7 +856,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250825_210402..8tdn3ltwbz.xlsm",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210402..xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210402..xlsm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -877,7 +877,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
+          "Value": "Tue, 26 Aug 2025 00:04:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -901,7 +901,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250825_210402..xlsm",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210402..xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210402..xlsm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -922,7 +922,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
+          "Value": "Tue, 26 Aug 2025 00:04:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -938,7 +938,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250825_210655.i2ly2c6cou.xlsm",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210655.xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210655.xlsm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -959,7 +959,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
+          "Value": "Tue, 26 Aug 2025 00:06:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -983,7 +983,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250825_210655.xlsm",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210655.xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210655.xlsm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1004,7 +1004,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
+          "Value": "Tue, 26 Aug 2025 00:06:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1020,7 +1020,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250825_210921.2mfyjkwuo1.xlsm",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210921.xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210921.xlsm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1041,7 +1041,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
+          "Value": "Tue, 26 Aug 2025 00:09:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1065,7 +1065,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250825_210921.xlsm",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210921.xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250825_210921.xlsm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1086,7 +1086,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
+          "Value": "Tue, 26 Aug 2025 00:09:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1102,7 +1102,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_090542.vgikxktslx.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_090542.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_090542.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1123,7 +1123,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:05:43 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1147,7 +1147,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_090542.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_090542.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_090542.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1168,7 +1168,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:05:43 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1184,7 +1184,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_091010.hy7m4egemu.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_091010.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_091010.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1205,7 +1205,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:10:10 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1229,7 +1229,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_091010.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_091010.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_091010.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1250,7 +1250,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:10:10 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1266,7 +1266,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092413.vox1kn4lo9.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092413.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092413.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1287,7 +1287,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:24:13 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1311,7 +1311,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092413.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092413.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092413.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1332,7 +1332,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:24:13 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1348,7 +1348,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092441.qdihz1kka1.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092441.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092441.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1369,7 +1369,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:24:41 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1393,7 +1393,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092441.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092441.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092441.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1414,7 +1414,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:24:41 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1430,7 +1430,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092538.jbib71x378.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092538.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092538.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1451,7 +1451,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:25:38 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1475,7 +1475,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092538.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092538.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092538.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1496,7 +1496,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:25:38 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1512,7 +1512,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092705.jlqv5f5pyo.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092705.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092705.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1533,7 +1533,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:27:05 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1557,7 +1557,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092705.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092705.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092705.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1578,7 +1578,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:27:05 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1594,7 +1594,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092712.0osbdn5ga1.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092712.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092712.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1615,7 +1615,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:27:12 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1639,7 +1639,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092712.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092712.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092712.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1660,7 +1660,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:27:12 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1676,7 +1676,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092719.k05q98j4ex.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092719.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092719.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1697,7 +1697,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:27:19 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1721,7 +1721,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092719.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092719.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092719.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1742,7 +1742,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:27:19 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1758,7 +1758,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092825.gh1hux8n9g.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092825.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092825.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1779,7 +1779,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:28:25 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1803,7 +1803,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092825.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092825.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092825.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1824,7 +1824,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:28:25 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1840,7 +1840,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092915.1cfoxusapq.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092915.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092915.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1861,7 +1861,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:29:15 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1885,7 +1885,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_092915.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092915.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_092915.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1906,7 +1906,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:29:15 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1922,7 +1922,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_093229.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093229.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093229.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1943,7 +1943,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:32:29 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1959,7 +1959,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_093229.zhnpely27p.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093229.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093229.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1980,7 +1980,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:32:29 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2004,7 +2004,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_093304.mqjbibk3z5.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093304.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093304.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2025,7 +2025,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:33:04 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2049,7 +2049,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_093304.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093304.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093304.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2070,7 +2070,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:33:04 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2086,7 +2086,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_093503.fgjtq2qv3o.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093503.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093503.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2107,7 +2107,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:35:03 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2131,7 +2131,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_093503.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093503.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093503.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2152,7 +2152,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:35:03 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2168,7 +2168,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_093542.ff1psfcoom.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093542.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093542.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2189,7 +2189,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:35:42 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2213,7 +2213,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_093542.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093542.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_093542.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2234,7 +2234,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:35:42 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2250,7 +2250,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_115645.e8ifgoy5s7.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_115645.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_115645.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2271,7 +2271,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 14:56:45 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2295,7 +2295,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_115645.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_115645.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_115645.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2316,7 +2316,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 14:56:45 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2332,7 +2332,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_115714.3hm29j8xg2.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_115714.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_115714.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2353,7 +2353,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 14:57:14 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2377,7 +2377,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250826_115714.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_115714.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250826_115714.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2398,7 +2398,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 14:57:14 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2414,7 +2414,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250827_100537.wwmvxcpk01.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250827_100537.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250827_100537.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2435,7 +2435,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 27 Aug 2025 13:05:37 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2459,7 +2459,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250827_100537.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250827_100537.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250827_100537.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2480,7 +2480,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 27 Aug 2025 13:05:37 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2496,7 +2496,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250827_152116.falehn67am.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250827_152116.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250827_152116.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2517,7 +2517,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 27 Aug 2025 18:21:16 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2541,7 +2541,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250827_152116.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250827_152116.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250827_152116.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2562,7 +2562,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 27 Aug 2025 18:21:16 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2578,7 +2578,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250828_163706.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_163706.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_163706.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2599,7 +2599,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Aug 2025 19:37:06 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2615,7 +2615,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250828_163706.yzejph7jzs.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_163706.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_163706.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2636,7 +2636,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Aug 2025 19:37:06 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2660,7 +2660,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250828_164426.pimcuaq39i.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_164426.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_164426.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2681,7 +2681,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Aug 2025 19:44:26 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2705,7 +2705,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250828_164426.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_164426.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_164426.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2726,7 +2726,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Aug 2025 19:44:26 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2742,7 +2742,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250828_171317.4hk5lyeqnd.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_171317.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_171317.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2763,7 +2763,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Aug 2025 20:13:17 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2787,7 +2787,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250828_171317.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_171317.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_171317.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2808,7 +2808,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Aug 2025 20:13:17 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2824,7 +2824,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250828_171326.a42cfrayrx.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_171326.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_171326.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2845,7 +2845,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Aug 2025 20:13:26 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2869,7 +2869,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250828_171326.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_171326.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_171326.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2890,7 +2890,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Aug 2025 20:13:26 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2906,7 +2906,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250828_173742.4e2mqpqjip.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_173742.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_173742.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2927,7 +2927,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Aug 2025 20:37:42 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2951,7 +2951,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250828_173742.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_173742.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_173742.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2972,7 +2972,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Aug 2025 20:37:42 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2988,7 +2988,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250828_173801.qu3mqjj2t3.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_173801.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_173801.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3009,7 +3009,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Aug 2025 20:38:01 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3033,7 +3033,7 @@
     },
     {
       "Route": "arquivos/arquivo_20250828_173801.xlsx",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_173801.xlsx",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250828_173801.xlsx",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3054,7 +3054,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Aug 2025 20:38:01 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3070,7 +3070,7 @@
     },
     {
       "Route": "arquivos/Modelo_padrao_automacao_V1.9.5 (1).xlsm",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\Modelo_padrao_automacao_V1.9.5 (1).xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\Modelo_padrao_automacao_V1.9.5 (1).xlsm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3091,7 +3091,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
+          "Value": "Tue, 26 Aug 2025 00:02:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3107,7 +3107,7 @@
     },
     {
       "Route": "arquivos/Modelo_padrao_automacao_V1.9.5 (1).zl7xy8ksej.xlsm",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\Modelo_padrao_automacao_V1.9.5 (1).xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\Modelo_padrao_automacao_V1.9.5 (1).xlsm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3128,7 +3128,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 12:03:00 GMT"
+          "Value": "Tue, 26 Aug 2025 00:02:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3152,7 +3152,7 @@
     },
     {
       "Route": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.xlsm",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.xlsm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3173,7 +3173,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 15:17:47 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3189,7 +3189,7 @@
     },
     {
       "Route": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.ytugms0oka.xlsm",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.xlsm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3210,7 +3210,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 15:17:47 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3234,7 +3234,7 @@
     },
     {
       "Route": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620.vem70lpm95.xlsm",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620.xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620.xlsm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3255,7 +3255,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 15:18:27 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3279,7 +3279,7 @@
     },
     {
       "Route": "arquivos/RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620.xlsm",
-      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620.xlsm",
+      "AssetFile": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620.xlsm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3300,7 +3300,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 26 Aug 2025 15:18:27 GMT"
+          "Value": "Thu, 28 Aug 2025 23:36:14 GMT"
         },
         {
           "Name": "Cache-Control",

@@ -9,10 +9,14 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
     {
         public ServiceLayerService ServiceLayerService { get; set; }
         public ContasAReceberDbContext Context { get; set; }    
+        public List<NotaDeDevolucaoGetDto> notaDeDevolucaoGetDtos { get; set; }
+        public List<NotaDeSaidaGetDto> notaDeSaidaGetDtos { get; set; }
         public RelatoriosService(ContasAReceberDbContext dbContext)
         {
             Context = dbContext;
             ServiceLayerService = new ServiceLayerService();
+            notaDeDevolucaoGetDtos = new List<NotaDeDevolucaoGetDto>();
+            notaDeSaidaGetDtos = new List<NotaDeSaidaGetDto>();
         }
         public async Task SalvarDados(List<NotaDeDevolucaoGetDto> notaDevolucao, List<NotaDeSaidaGetDto> notasSaida)
         {
@@ -84,14 +88,19 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
 
             await Context.SaveChangesAsync();
         }
-        public async Task AtualizarRelatorioDeBaixas(int idFilial, int docMinimoSaida, int docMinimoDevolucao)
+        public async Task AtualizarRelatorioDeBaixas(int idFilial, int? docMinimoSaida, int? docMinimoDevolucao)
         {
             Console.WriteLine("Baixando dados atuais e salvando no postgres! ATENÇÃO...");
             await  ServiceLayerService.RealizarLogin();
-            var notasSaida = await ServiceLayerService.BaixarRelatorioNotasSaidaAsync(idFilial, docMinimoSaida);
-            var notaDeDevolucao = await ServiceLayerService.BaixarRelatorioNotasDevolucaoAsync(idFilial, docMinimoDevolucao);
-            
-            await SalvarDados(notaDeDevolucao, notasSaida);
+            if (docMinimoSaida.HasValue && docMinimoSaida.Value > 0)
+            {
+                notaDeSaidaGetDtos = await ServiceLayerService.BaixarRelatorioNotasSaidaAsync(idFilial, docMinimoSaida.Value);
+            }
+            if (docMinimoDevolucao.HasValue && docMinimoDevolucao.Value > 0)
+            {
+                notaDeDevolucaoGetDtos = await ServiceLayerService.BaixarRelatorioNotasDevolucaoAsync(idFilial, docMinimoDevolucao.Value);
+            }
+            //await SalvarDados(notaDeDevolucao, notasSaida);
         }
     }
 }

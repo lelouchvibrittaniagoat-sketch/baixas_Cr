@@ -17,6 +17,8 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.DTOS
         public String ContaContabil { get; set; }
         public String Obs { get; set; }
         public String Rede { get; set; }
+        public List<NotaDeDevolucaoGetDto> notaDeDevolucaoGetDtos = new List<NotaDeDevolucaoGetDto>();
+        public List<NotaDeSaidaGetDto> notaDeSaidaGetDtos = new List<NotaDeSaidaGetDto>();
         public bool ErroParceiroConsolidado { get; set; }
         public List<NotasASeremBaixadas> NotasASeremBaixadas { get; set; }
         public List<int> documentoCriados { get; set; }

@@ -51,7 +51,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                 errosEncontrados.Add("Filial não encontrada nas opções disponiveis no sistema. Verifique a composição!");
                 return null;
             }
-            List<NotasASeremBaixadas> notasFiscais = incomingPaymentsService.VerificarNotasFiscais(notasFiscaisComposicao);
+            List<NotasASeremBaixadas> notasFiscais = incomingPaymentsService.VerificarNotasFiscais(notasFiscaisComposicao,composicao);
             composicao.NotasASeremBaixadas = notasFiscais;
             List<NotaFiscal> TodasAsNotasComProblema = new List<NotaFiscal>();
             foreach (NotasASeremBaixadas nota in composicao.NotasASeremBaixadas)

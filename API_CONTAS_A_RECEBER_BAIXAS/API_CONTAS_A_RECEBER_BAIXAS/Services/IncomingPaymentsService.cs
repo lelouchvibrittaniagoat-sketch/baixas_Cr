@@ -146,7 +146,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             return dictComClsESuasNotas;
         }
 
-        public List<NotasASeremBaixadas> VerificarNotasFiscais(Dictionary<string, List<DataFrameRow>> NotasASeremValidadas)
+        public List<NotasASeremBaixadas> VerificarNotasFiscais(Dictionary<string, List<DataFrameRow>> NotasASeremValidadas, Composicao composicao)
         {
 
             Dictionary<string, List<NotaFiscal>> notasFiscaisComposicao = new Dictionary<string, List<NotaFiscal>>();
@@ -164,11 +164,11 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                 notasDeDevolucao.ForEach(nota =>
                 {
                     Console.WriteLine($"Validando nota de devolução: {nota["NUMERO INTERNO"]}");
-                    NotasFiscaisDevolucao ObjetoNoBanco = ContasAReceberDbContextInstance.NotasFiscaisDevolucaos.FirstOrDefault(n => n.DocNum == nota["NUMERO INTERNO"] && n.Canceled == "N");
+                    NotaDeDevolucaoGetDto ObjetoNoBanco = composicao.notaDeDevolucaoGetDtos.FirstOrDefault(n => n.DocNum.ToString() == nota["NUMERO INTERNO"].ToString() && n.CANCELED == "N");
                     bool SaldoEstaValido = ValidaSaldoNFDevolucao(ObjetoNoBanco, nota);
                     NotaFiscalDeDevolucaoDTOHandler notaFiscalDeDevolucaoDTOHandler = new NotaFiscalDeDevolucaoDTOHandler();
                     notaFiscalDeDevolucaoDTOHandler.SaldoEstaValido = SaldoEstaValido;
-                    notaFiscalDeDevolucaoDTOHandler.NotaFiscalAnalisadaBanco =ObjetoNoBanco as NotasFiscaisDevolucao;
+                    notaFiscalDeDevolucaoDTOHandler.NotaFiscalAnalisadaBanco =ObjetoNoBanco as NotaDeDevolucaoGetDto;
                     notaFiscalDeDevolucaoDTOHandler.NotaFiscalComposicao = nota;
                     listasDeNotasDevolucao.Add(notaFiscalDeDevolucaoDTOHandler);
 
@@ -180,11 +180,11 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                 notasDeSaida.ForEach(nota =>
                 {
                     Console.WriteLine($"Validando nota de saida: {nota["NUMERO INTERNO"]}");
-                    NotaFiscaisDeSaida ObjetoNoBanco = ContasAReceberDbContextInstance.NotaFiscaisDeSaida.FirstOrDefault(n => n.DocNum == nota["NUMERO INTERNO"] && n.Canceled == "N");
+                    NotaDeSaidaGetDto ObjetoNoBanco = composicao.notaDeSaidaGetDtos.FirstOrDefault(n => n.DocNum.ToString() == nota["NUMERO INTERNO"].ToString() && n.CANCELED == "N");
                     bool SaldoEstaValido = ValidaSaldoNFSaida(ObjetoNoBanco, nota);
                     NotasFiscaisDeSaidaDTOHandler notasFiscaisDeSaidaDTOHandler = new NotasFiscaisDeSaidaDTOHandler();
                     notasFiscaisDeSaidaDTOHandler.SaldoEstaValido = SaldoEstaValido;
-                    notasFiscaisDeSaidaDTOHandler.NotaFiscalAnalisadaBanco = ObjetoNoBanco as NotaFiscaisDeSaida;
+                    notasFiscaisDeSaidaDTOHandler.NotaFiscalAnalisadaBanco = ObjetoNoBanco as NotaDeSaidaGetDto;
                     notasFiscaisDeSaidaDTOHandler.NotaFiscalComposicao = nota;
                     listasDeNotasSaida.Add(notasFiscaisDeSaidaDTOHandler);
 
@@ -200,10 +200,10 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
 
             return notasASeremBaixadas;
         }
-        public bool ValidaSaldoNFSaida(NotaFiscaisDeSaida NotaFiscalBancoDeDados, DataFrameRow notaFiscalDeSaidaComposicao)
+        public bool ValidaSaldoNFSaida(NotaDeSaidaGetDto NotaFiscalBancoDeDados, DataFrameRow notaFiscalDeSaidaComposicao)
         {
 
-            if (NotaFiscalBancoDeDados == null || !NotaFiscalBancoDeDados.SaldoEmAberto.HasValue)
+            if (NotaFiscalBancoDeDados == null )
                 return false;
             //necessário para conseguir aplicar juros nas baixas, é necessário fazer o comparativo com o valor bruto na NF. 
             //Se for baseado no liquido, há problemas
@@ -214,7 +214,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
 
             if (decimal.TryParse(valorCelula, out var valorLiquido))
             {
-                var saldo = NotaFiscalBancoDeDados.SaldoEmAberto.Value;
+                var saldo = (decimal) NotaFiscalBancoDeDados.Saldo_disponivel;
 
                 // Arredonda com precisão de 2 casas
                 var valorNota = Math.Round(valorLiquido, 2);
@@ -225,9 +225,9 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
 
             return false; // Não conseguiu converter
         }
-        public bool ValidaSaldoNFDevolucao(NotasFiscaisDevolucao notaFiscalBancoDeDados, DataFrameRow notaFiscalDevolucaoComposicao)
+        public bool ValidaSaldoNFDevolucao(NotaDeDevolucaoGetDto notaFiscalBancoDeDados, DataFrameRow notaFiscalDevolucaoComposicao)
         {
-            if (notaFiscalBancoDeDados == null || !notaFiscalBancoDeDados.SaldoEmAberto.HasValue)
+            if (notaFiscalBancoDeDados == null)
                 return false;
 
             var valorCelula = notaFiscalDevolucaoComposicao["VALOR LIQUIDO"]?.ToString();
@@ -237,7 +237,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
 
             if (decimal.TryParse(valorCelula, out var valorLiquido))
             {
-                var saldo = notaFiscalBancoDeDados.SaldoEmAberto.Value;
+                var saldo = (decimal)notaFiscalBancoDeDados.Saldo_disponivel;
 
                 // Arredonda com precisão de 2 casas
                 var valorNota = Math.Round(valorLiquido, 2);
