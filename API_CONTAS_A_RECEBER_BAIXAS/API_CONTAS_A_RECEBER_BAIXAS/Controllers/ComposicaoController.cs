@@ -94,7 +94,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
             {
                 var cancelado = await this.composicaoService.serviceLayerService.CancelarDocumento(nro_baixas);
                 dict[nro_baixas.ToString()]  = cancelado;
-
+                    
             }
             return Ok(dict);
             

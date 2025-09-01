@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6CfuIg8xLN6hP9Eo/XJvXIIB1sXAK7YfxWfM3j8PD4c=",
+  "Hash": "hJx7S+onyx3QXrayVuAq/ndC+BDpR/Mc1QdohbsjbL4=",
   "Source": "API_CONTAS_A_RECEBER_BAIXAS",
   "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
   "Mode": "Default",
@@ -666,6 +666,111 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250829_085102.xlsx"
+    },
+    {
+      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250829_161329.xlsx",
+      "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
+      "RelativePath": "arquivos/arquivo_20250829_161329#[.{fingerprint}]?.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mbbkry56ea",
+      "Integrity": "UgnDd+UfHAtBtdN+yAoJo4qH3LPvK5acJZBYlc6z+Co=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250829_161329.xlsx"
+    },
+    {
+      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250829_161413.xlsx",
+      "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
+      "RelativePath": "arquivos/arquivo_20250829_161413#[.{fingerprint}]?.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "136bbgbtp4",
+      "Integrity": "jQ64DU5GkYdYsnXfJ4Lcpfbf6TJahe8XPLGAJLwV9Kg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250829_161413.xlsx"
+    },
+    {
+      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250901_131128.xlsx",
+      "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
+      "RelativePath": "arquivos/arquivo_20250901_131128#[.{fingerprint}]?.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lfzz3clgdd",
+      "Integrity": "IYFnl5gyVCEJXFEVeYkzbKpsQNGPaRsjI1rR20YH4T0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250901_131128.xlsx"
+    },
+    {
+      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250901_134319.xlsx",
+      "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
+      "RelativePath": "arquivos/arquivo_20250901_134319#[.{fingerprint}]?.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tp5czpwa3v",
+      "Integrity": "D9FsL8WzG07Mll4JgTtbCJGjUHPgoDsstFG8Q86fXVc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250901_134319.xlsx"
+    },
+    {
+      "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250901_153357.xlsx",
+      "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
+      "RelativePath": "arquivos/arquivo_20250901_153357#[.{fingerprint}]?.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wsjz1r5gkv",
+      "Integrity": "AIxRPntcK+sk+2sC2WU/xcYinMVu60tfpWqznzXkznM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250901_153357.xlsx"
     },
     {
       "Identity": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\Modelo_padrao_automacao_V1.9.5 (1).xlsm",
@@ -3271,6 +3376,416 @@
         {
           "Name": "integrity",
           "Value": "sha256-UmTH44jujMl40C8yslCjRNwgUaqpmwoJ6w5xholfj98="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250829_161329.mbbkry56ea.xlsx",
+      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250829_161329.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UgnDd+UfHAtBtdN+yAoJo4qH3LPvK5acJZBYlc6z+Co=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 29 Aug 2025 19:13:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mbbkry56ea"
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250829_161329.xlsx"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UgnDd+UfHAtBtdN+yAoJo4qH3LPvK5acJZBYlc6z+Co="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250829_161329.xlsx",
+      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250829_161329.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UgnDd+UfHAtBtdN+yAoJo4qH3LPvK5acJZBYlc6z+Co=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 29 Aug 2025 19:13:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UgnDd+UfHAtBtdN+yAoJo4qH3LPvK5acJZBYlc6z+Co="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250829_161413.136bbgbtp4.xlsx",
+      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250829_161413.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "73523"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jQ64DU5GkYdYsnXfJ4Lcpfbf6TJahe8XPLGAJLwV9Kg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 29 Aug 2025 19:14:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "136bbgbtp4"
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250829_161413.xlsx"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jQ64DU5GkYdYsnXfJ4Lcpfbf6TJahe8XPLGAJLwV9Kg="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250829_161413.xlsx",
+      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250829_161413.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "73523"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jQ64DU5GkYdYsnXfJ4Lcpfbf6TJahe8XPLGAJLwV9Kg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 29 Aug 2025 19:14:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jQ64DU5GkYdYsnXfJ4Lcpfbf6TJahe8XPLGAJLwV9Kg="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250901_131128.lfzz3clgdd.xlsx",
+      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250901_131128.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16255"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IYFnl5gyVCEJXFEVeYkzbKpsQNGPaRsjI1rR20YH4T0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 16:11:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lfzz3clgdd"
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250901_131128.xlsx"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IYFnl5gyVCEJXFEVeYkzbKpsQNGPaRsjI1rR20YH4T0="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250901_131128.xlsx",
+      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250901_131128.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16255"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IYFnl5gyVCEJXFEVeYkzbKpsQNGPaRsjI1rR20YH4T0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 16:11:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IYFnl5gyVCEJXFEVeYkzbKpsQNGPaRsjI1rR20YH4T0="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250901_134319.tp5czpwa3v.xlsx",
+      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250901_134319.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16255"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D9FsL8WzG07Mll4JgTtbCJGjUHPgoDsstFG8Q86fXVc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 16:43:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tp5czpwa3v"
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250901_134319.xlsx"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D9FsL8WzG07Mll4JgTtbCJGjUHPgoDsstFG8Q86fXVc="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250901_134319.xlsx",
+      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250901_134319.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16255"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D9FsL8WzG07Mll4JgTtbCJGjUHPgoDsstFG8Q86fXVc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 16:43:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D9FsL8WzG07Mll4JgTtbCJGjUHPgoDsstFG8Q86fXVc="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250901_153357.wsjz1r5gkv.xlsx",
+      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250901_153357.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26216"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AIxRPntcK+sk+2sC2WU/xcYinMVu60tfpWqznzXkznM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 18:33:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wsjz1r5gkv"
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250901_153357.xlsx"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AIxRPntcK+sk+2sC2WU/xcYinMVu60tfpWqznzXkznM="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250901_153357.xlsx",
+      "AssetFile": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250901_153357.xlsx",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26216"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AIxRPntcK+sk+2sC2WU/xcYinMVu60tfpWqznzXkznM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Sep 2025 18:33:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AIxRPntcK+sk+2sC2WU/xcYinMVu60tfpWqznzXkznM="
         }
       ]
     },

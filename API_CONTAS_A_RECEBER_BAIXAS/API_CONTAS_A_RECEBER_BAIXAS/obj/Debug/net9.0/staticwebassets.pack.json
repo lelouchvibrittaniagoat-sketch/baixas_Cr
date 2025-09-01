@@ -137,6 +137,26 @@
       "PackagePath": "staticwebassets\\arquivos\\arquivo_20250829_085102.xlsx"
     },
     {
+      "Id": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250829_161329.xlsx",
+      "PackagePath": "staticwebassets\\arquivos\\arquivo_20250829_161329.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250829_161413.xlsx",
+      "PackagePath": "staticwebassets\\arquivos\\arquivo_20250829_161413.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250901_131128.xlsx",
+      "PackagePath": "staticwebassets\\arquivos\\arquivo_20250901_131128.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250901_134319.xlsx",
+      "PackagePath": "staticwebassets\\arquivos\\arquivo_20250901_134319.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\JFC\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250901_153357.xlsx",
+      "PackagePath": "staticwebassets\\arquivos\\arquivo_20250901_153357.xlsx"
+    },
+    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.API_CONTAS_A_RECEBER_BAIXAS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
