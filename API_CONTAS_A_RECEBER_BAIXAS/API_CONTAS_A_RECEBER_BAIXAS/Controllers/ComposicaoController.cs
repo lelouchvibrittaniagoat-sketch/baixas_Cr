@@ -102,7 +102,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
         [HttpGet("GetComposicaoComErros")]
         public async Task<IActionResult> GetComposicaoComErros(int idBaixasCr)
         {
-            BaixasCR baixasCR = composicaoService.Context.BaixasCR
+            var baixasCR = composicaoService.Context.BaixasCR
                 .FirstOrDefault(x => x.id == idBaixasCr);
 
             if (baixasCR == null)
@@ -117,12 +117,22 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
                 return NotFound("Nenhum arquivo de composição com erros foi encontrado.");
             }
 
-            // Retorna como um arquivo Excel para download
-            return File(result,
-                        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                        $"ComposicaoComErros_{idBaixasCr}.{baixasCR.extensao}");
-        }
+            // Monta nome do arquivo com extensão original
+            var nomeArquivoCriado = $"ComposicaoComErros_{idBaixasCr}.{baixasCR.extensao}";
 
+            // Salva em wwwroot/arquivos
+            var pasta = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "arquivos");
+            if (!Directory.Exists(pasta))
+                Directory.CreateDirectory(pasta);
+
+            var caminhoCompleto = Path.Combine(pasta, nomeArquivoCriado);
+            await System.IO.File.WriteAllBytesAsync(caminhoCompleto, result);
+
+            // Monta URL pública para download
+            var urlDownload = $"{Request.Scheme}://{Request.Host}/arquivos/{nomeArquivoCriado}";
+
+            return Ok(new { Url = urlDownload });
+        }
 
         [HttpGet("BaixasRegistradasPelaAutomacaoComFiltros")]
         public async Task<IActionResult> Index2(string? redeCr, string?  contaContabil, string? dataDaBaixa)

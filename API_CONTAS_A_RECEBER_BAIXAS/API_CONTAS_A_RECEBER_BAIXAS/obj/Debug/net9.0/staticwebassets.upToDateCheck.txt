@@ -34,6 +34,32 @@ wwwroot\arquivos\arquivo_20250829_161413.xlsx
 wwwroot\arquivos\arquivo_20250901_131128.xlsx
 wwwroot\arquivos\arquivo_20250901_134319.xlsx
 wwwroot\arquivos\arquivo_20250901_153357.xlsx
+wwwroot\arquivos\arquivo_20250901_155541.xlsx
+wwwroot\arquivos\arquivo_20250902_121848.xlsx
+wwwroot\arquivos\arquivo_20250902_123752.xlsx
+wwwroot\arquivos\arquivo_20250902_123815.xlsx
+wwwroot\arquivos\arquivo_20250902_135539.xlsx
+wwwroot\arquivos\arquivo_20250902_162606.xlsx
+wwwroot\arquivos\arquivo_20250904_093718.xlsx
+wwwroot\arquivos\arquivo_20250904_093821.xlsx
+wwwroot\arquivos\arquivo_20250904_103559.xlsm
+wwwroot\arquivos\arquivo_20250904_160651.xlsx
+wwwroot\arquivos\arquivo_20250904_163119.xlsx
+wwwroot\arquivos\arquivo_20250905_094802.xlsx
+wwwroot\arquivos\arquivo_20250905_094842.xlsx
+wwwroot\arquivos\arquivo_20250908_113303.xlsx
+wwwroot\arquivos\arquivo_20250909_093100.xlsx
+wwwroot\arquivos\arquivo_20250910_094230.xlsx
+wwwroot\arquivos\arquivo_20250910_094259.xlsx
+wwwroot\arquivos\arquivo_20250910_152616.xlsx
+wwwroot\arquivos\arquivo_20250911_083944.xlsx
+wwwroot\arquivos\arquivo_20250911_084111.xlsx
+wwwroot\arquivos\ComposicaoComErros_177..xlsx
+wwwroot\arquivos\ComposicaoComErros_179..xlsm
+wwwroot\arquivos\ComposicaoComErros_182..xlsx
+wwwroot\arquivos\ComposicaoComErros_188..xlsx
+wwwroot\arquivos\ComposicaoComErros_192..xlsx
+wwwroot\arquivos\ComposicaoComErros_196..xlsx
 wwwroot\arquivos\Modelo_padrao_automacao_V1.9.5 (1).xlsm
 wwwroot\arquivos\RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.xlsm
 wwwroot\arquivos\RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620.xlsm
