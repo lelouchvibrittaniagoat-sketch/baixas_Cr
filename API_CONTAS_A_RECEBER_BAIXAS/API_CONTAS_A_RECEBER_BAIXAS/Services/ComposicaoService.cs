@@ -135,7 +135,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                     if (!result.IsSuccessStatusCode)
                     {
                         
-                        errosEncontrados.Add(resultadoComoString);
+                        errosEncontrados.Add($"O CL {incomingPayments.CardCode} não foi baixado devido ao seguinte problema:{resultadoComoString}");
                             
                     }
                     else

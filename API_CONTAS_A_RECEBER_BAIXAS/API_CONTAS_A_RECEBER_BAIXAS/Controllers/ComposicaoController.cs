@@ -178,7 +178,8 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
         public async Task<IActionResult> UploudArquivoDeBaixaExcel(IFormFile file, [FromForm] string adiantamentoCliente)
         {
             if (file == null || file.Length == 0)
-                return BadRequest("Arquivo inválido.");
+                return BadRequest(new { Erros = "Arquivo inválido." });
+
 
             // Verifica a extensão do arquivo
             var extensaoValida = new[] { ".xlsx",".xlsm"};
@@ -187,8 +188,10 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
             Console.WriteLine(adiantamentoCliente);
             var contaContabilEfetiva = adiantamentoCliente;
             if (!extensaoValida.Contains(extensao))
-                return BadRequest("Extensão de arquivo não suportada. Apenas arquivos .xlsx são permitidos.");
-            
+
+                return BadRequest(new { Erros = "Extensão de arquivo não suportada. Apenas arquivos .xlsx são permitidos." });
+
+
 
             using (var memoryStream = new MemoryStream())
             {
@@ -228,13 +231,14 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
 
                     if (!apenasHaUmaSheet || !inicioDeDados) {
 
-                        return BadRequest("Verifique se arquivo possui apenas 1 sheet e se os dados de notas começam na linha 10! ");
-
+                        return BadRequest(new { Erros = "Verifique se arquivo possui apenas 1 sheet e se os dados de notas começam na linha 10! " });
                     }
                     Filiais filial = composicaoService.incomingPaymentsService.GetIdEmpresaPorNome(composicao.Filial);
                     if(filial == null)
                     {
-                        return BadRequest("Filial incorreta");
+                       
+                        return BadRequest(new { Erros = $"Filial incorreta" });
+
                     }
                     int ns = keyValuePairs.TryGetValue("NS", out int tempNs) ? tempNs : 0;
                     int ds = keyValuePairs.TryGetValue("DS", out int tempDs) ? tempDs : 0;
@@ -242,9 +246,6 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
                     
 
                     await relatoriosService.AtualizarRelatorioDeBaixas(filial.IdSap, ns, ds);
-                        
-                    
-
 
                     composicao.notaDeSaidaGetDtos = this.relatoriosService.notaDeSaidaGetDtos;
                     composicao.notaDeDevolucaoGetDtos = this.relatoriosService.notaDeDevolucaoGetDtos;
@@ -256,7 +257,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Controllers
                     if (headersComProblema.Any())
                     {
                         var headersLista = string.Join(", ", headersComProblema);
-                        return BadRequest($"Os headers:{headersLista} não condizem com os cabeçalhos válidos. Reveja os nomes das colunas na composição");
+                        return BadRequest(new { Erros = $"Os headers:{headersLista} não condizem com os cabeçalhos válidos. Reveja os nomes das colunas na composição" });
                     }
                     
                     Composicao composicao1ComDocs = await  composicaoService.MainExecution(composicao, erroService.listaComErros, contaContabilEfetiva, baixasCR);
