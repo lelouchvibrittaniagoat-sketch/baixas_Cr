@@ -1,32 +1,6 @@
 [
   {
-    "ContainingType": "API_CONTAS_A_RECEBER_BAIXAS.Controllers.ComposicaoController",
-    "Method": "GetInformacoes",
-    "RelativePath": "Composicao/AtualizarRelatorioDeBaixas",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "idFilial",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "DocMinimoSaida",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "DocMinimoDevolucao",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_CONTAS_A_RECEBER_BAIXAS.Controllers.ComposicaoController",
+    "ContainingType": "ComposicaoController",
     "Method": "Index",
     "RelativePath": "Composicao/BaixasRegistradasPelaAutomacao",
     "HttpMethod": "GET",
@@ -36,33 +10,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API_CONTAS_A_RECEBER_BAIXAS.Controllers.ComposicaoController",
-    "Method": "Index2",
-    "RelativePath": "Composicao/BaixasRegistradasPelaAutomacaoComFiltros",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "redeCr",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "contaContabil",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "dataDaBaixa",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "API_CONTAS_A_RECEBER_BAIXAS.Controllers.ComposicaoController",
+    "ContainingType": "ComposicaoController",
     "Method": "CancelarComposicao",
     "RelativePath": "Composicao/CancelarComposicao",
     "HttpMethod": "DELETE",
@@ -78,7 +26,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API_CONTAS_A_RECEBER_BAIXAS.Controllers.ComposicaoController",
+    "ContainingType": "ComposicaoController",
     "Method": "GetComposicaoComErros",
     "RelativePath": "Composicao/GetComposicaoComErros",
     "HttpMethod": "GET",
@@ -94,7 +42,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API_CONTAS_A_RECEBER_BAIXAS.Controllers.ComposicaoController",
+    "ContainingType": "ComposicaoController",
     "Method": "GetContaBancaria",
     "RelativePath": "Composicao/GetContaBancaria",
     "HttpMethod": "GET",
@@ -104,7 +52,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API_CONTAS_A_RECEBER_BAIXAS.Controllers.ComposicaoController",
+    "ContainingType": "ComposicaoController",
     "Method": "GetRedeCr",
     "RelativePath": "Composicao/GetRedeCr",
     "HttpMethod": "GET",
@@ -114,7 +62,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "API_CONTAS_A_RECEBER_BAIXAS.Controllers.ComposicaoController",
+    "ContainingType": "ComposicaoController",
     "Method": "UploudArquivoDeBaixaExcel",
     "RelativePath": "Composicao/UploadDeArquivoBaixasCR",
     "HttpMethod": "POST",

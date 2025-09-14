@@ -29,44 +29,6 @@
         }
       }
     },
-    "/Composicao/AtualizarRelatorioDeBaixas": {
-      "get": {
-        "tags": [
-          "Composicao"
-        ],
-        "parameters": [
-          {
-            "name": "idFilial",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "DocMinimoSaida",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "DocMinimoDevolucao",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/Composicao/GetRedeCr": {
       "get": {
         "tags": [
@@ -113,41 +75,6 @@
             "schema": {
               "type": "integer",
               "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/Composicao/BaixasRegistradasPelaAutomacaoComFiltros": {
-      "get": {
-        "tags": [
-          "Composicao"
-        ],
-        "parameters": [
-          {
-            "name": "redeCr",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "contaContabil",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "dataDaBaixa",
-            "in": "query",
-            "schema": {
-              "type": "string"
             }
           }
         ],

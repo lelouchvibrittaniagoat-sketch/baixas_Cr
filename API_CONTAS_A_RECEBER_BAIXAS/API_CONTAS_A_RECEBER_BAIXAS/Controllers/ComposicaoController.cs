@@ -146,7 +146,7 @@ public class ComposicaoController : ControllerBase
 
     // NOTE: mantive seu Upload em grande parte, mas com validações e async corretos.
     [HttpPost("UploadDeArquivoBaixasCR")]
-    public async Task<IActionResult> UploadDeArquivoBaixasCR([FromForm] IFormFile file, [FromForm] string adiantamentoCliente)
+    public async Task<IActionResult> UploudArquivoDeBaixaExcel(IFormFile file, [FromForm] string adiantamentoCliente)
     {
         if (file == null || file.Length == 0)
             return BadRequest(new { Erros = "Arquivo inválido." });
