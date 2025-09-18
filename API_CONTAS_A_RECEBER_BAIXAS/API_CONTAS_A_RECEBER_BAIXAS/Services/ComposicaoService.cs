@@ -12,6 +12,7 @@ using static System.Net.WebRequestMethods;
 using API_CONTAS_A_RECEBER_BAIXAS.Interfaces;
 using System.Security.Cryptography.Xml;
 using System;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace API_CONTAS_A_RECEBER_BAIXAS.Services
@@ -23,8 +24,8 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
         public List<Dictionary<String, List<String>>> listaComErrosNotasJson = new List<Dictionary<String, List<String>>>();
         public ServiceLayerService serviceLayerService { get; set; }
         public IncomingPaymentsService incomingPaymentsService { get; set; }
-        public List<NotaFiscal> TodasnotasFiscaisComproblemas {get; set; }
-        public ComposicaoService (ContasAReceberDbContext dbContext)
+        public List<NotaFiscal> TodasnotasFiscaisComproblemas { get; set; }
+        public ComposicaoService(ContasAReceberDbContext dbContext)
         {
             Context = dbContext;
             incomingPaymentsService = new IncomingPaymentsService(null, dbContext);
@@ -32,149 +33,254 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
         }
         public async Task<byte[]> CriarComposicaoComErros(int idComposicao)
         {
-            var composicoesComErro =  Context.BaixasCR.Where(x => (x.status != "SEM ERROS" || x.json_erros.Count >0) && x.id == idComposicao).ToList();
-            if(composicoesComErro.Count == 0)
+            var composicoesComErro = Context.BaixasCR.Where(x => (x.status != "SEM ERROS" || x.json_erros.Count > 0) && x.id == idComposicao).ToList();
+            if (composicoesComErro.Count == 0)
             {
                 return null;
             }
             byte[] arquivoComposicao = composicoesComErro.FirstOrDefault().arquivo_excel;
             return this.AtualizarPlanilhaComErros(arquivoComposicao, composicoesComErro.FirstOrDefault().json_erros).arquivoAtualizado;
         }
+        public bool SalvarNotasNoBanco(NotasASeremBaixadas notasASeremBaixadas, int idBaixa)
+        {
+
+            // Notas de saída
+            bool possuiProblemas = false;
+            foreach (var x in notasASeremBaixadas.NotasFiscaisSaida)
+            {
+                var nf = (NotaFiscaisDeSaida)x.NotaFiscalAnalisadaBanco;
+                int docEntry = int.Parse(nf.DocEntry);
+
+                var existente = Context.NotasFiscaisStatus
+                    .FirstOrDefault(s => s.idBaixa == idBaixa && s.docEntry == docEntry);
+
+                if (existente == null)
+                {
+                    existente = new NotasFiscaisStatus
+                    {
+                        nroNota = int.Parse(nf.Serial),
+                        docEntry = docEntry,
+                        idBaixa = idBaixa,
+                        tipoDoc = 13,
+                        erros = new List<string>()
+                    };
+                    Context.NotasFiscaisStatus.Add(existente);
+                }
+
+                if (!x.NotasEstaApta())
+                {
+                    if (existente.docEntryContasAReceber > 0)
+                    {
+                        List<string> list = new List<string>();
+                        list.Add($"Essa nota fiscal já foi baixada pela automação anteriormente. Verique a baixa N°:{existente.docNumContasAReceber}");
+                        existente.erros = list;
+                    }
+                    else
+                    {
+                        existente.erros = x.Problemas;
+                    }
+                }
+
+
+            }
+
+            // Notas de devolução
+            foreach (var x in notasASeremBaixadas.NotasFiscaisDevolucao)
+            {
+                var nf = (NotasFiscaisDevolucao)x.NotaFiscalAnalisadaBanco;
+                int docEntry = int.Parse(nf.DocEntry);
+
+                var existente = Context.NotasFiscaisStatus
+                    .FirstOrDefault(s => s.idBaixa == idBaixa && s.docEntry == docEntry);
+
+                if (existente == null)
+                {
+                    existente = new NotasFiscaisStatus
+                    {
+                        nroNota = int.Parse(nf.Serial),
+                        docEntry = docEntry,
+                        idBaixa = idBaixa,
+                        tipoDoc = 14,
+                        erros = new List<string>()
+                    };
+                    Context.NotasFiscaisStatus.Add(existente);
+                }
+
+
+                if (!x.NotasEstaApta())
+                {
+                    if (existente.docEntryContasAReceber > 0)
+                    {
+                        List<string> list = new List<string>();
+                        list.Add($"Essa nota fiscal já foi baixada pela automação anteriormente. Verique a baixa N°:{existente.docNumContasAReceber}");
+                        existente.erros = list;
+                    }
+                    else
+                    {
+                        existente.erros = x.Problemas;
+                    }
+                }
+            }
+
+
+            Context.SaveChanges();
+            return possuiProblemas;
+        }
+        public async Task AlterarNotasQueForamBaixadasComSucesso(int idBaixa, string cl, int docNumContasAReceber, int docEntryContasAReceber)
+        {
+            List<NotasFiscaisStatus> notasFiscaisStatuses = this.Context.NotasFiscaisStatus.Where(x => x.idBaixa == idBaixa && x.cL == cl).ToList();
+            notasFiscaisStatuses.ForEach(x =>
+            {
+                x.docEntryContasAReceber = docEntryContasAReceber;
+                x.docNumContasAReceber = docNumContasAReceber;
+            });
+            await this.Context.SaveChangesAsync();
+        }
+        public async Task AlterarClQuePossuiErros(int idBaixa, string cl, List<string> erros)
+        {
+            List<NotasFiscaisStatus> notasFiscaisStatuses = this.Context.NotasFiscaisStatus.Where(x => x.idBaixa == idBaixa && x.cL == cl).ToList();
+            notasFiscaisStatuses.ForEach(x =>
+            {
+                if (x.possuiErros == false && x.docNumContasAReceber > 0)
+                {
+                    List<string> list = new List<string>();
+                    list.Add($"Essa nota fiscal já foi baixada pela automação anteriormente. Verique a baixa N°:{x.docNumContasAReceber}");
+                    x.erros = list;
+                }
+                else
+                {
+                    x.erros = erros;
+                }
+
+            });
+            await this.Context.SaveChangesAsync();
+        }
+
         public async Task<Composicao> MainExecution(Composicao composicao, List<String> errosEncontrados, string ContaContabil, BaixasCR baixasCR)
         {
             await serviceLayerService.RealizarLogin();
             incomingPaymentsService.DataFrameComposicao = composicao.ComposicaoCr;
             var notasFiscaisComposicao = incomingPaymentsService.CriarDictComClsESuasNotas();
             Filiais filialEmQuestao = incomingPaymentsService.GetIdEmpresaPorNome(composicao.Filial);
-            if(filialEmQuestao == null)
+            if (filialEmQuestao == null)
             {
                 errosEncontrados.Add("Filial não encontrada nas opções disponiveis no sistema. Verifique a composição!");
                 return null;
             }
-            List<NotasASeremBaixadas> notasFiscais = incomingPaymentsService.VerificarNotasFiscais(notasFiscaisComposicao,composicao);
+            List<NotasASeremBaixadas> notasFiscais = incomingPaymentsService.VerificarNotasFiscais(notasFiscaisComposicao, composicao);
             composicao.NotasASeremBaixadas = notasFiscais;
             List<NotaFiscal> TodasAsNotasComProblema = new List<NotaFiscal>();
             foreach (NotasASeremBaixadas nota in composicao.NotasASeremBaixadas)
             {
                 var notasdeSaidaComProblemas = nota.NotasFiscaisSaida.Where(x => x.NotasEstaApta() == false).ToList();
                 var notasDeDevolucaoComProblemas = nota.NotasFiscaisDevolucao.Where(x => x.NotasEstaApta() == false).ToList();
-                if (notasdeSaidaComProblemas.Count() > 0 || notasDeDevolucaoComProblemas.Count() > 0)
+                bool possuiProblemas = SalvarNotasNoBanco(nota, baixasCR.id);
+                if (possuiProblemas)
                 {
-
-                    nota.NotasFiscaisDeDevolucaoComProblemas = notasDeDevolucaoComProblemas;
-                    nota.NotasFiscaisSaidaComProblemas = notasdeSaidaComProblemas;
-                    List<NotaFiscal> notasFiscaisComproblemas = nota.GetNotasFiscaisComProblemas();
-                    notasFiscaisComproblemas.ForEach(
-                        x => {
-                            errosEncontrados.AddRange(x.GetListaDeErrosString());
-                            listaComErrosNotasJson.Add(x.ProblemasJson);
-                        }
-                    );
-
-                    //TodasnotasFiscaisComproblemas.AddRange(notasFiscaisComproblemas);
+                    //Como o cl possui erros, vamos parao próximo cl, para não comprometer os lançamentos;
                     continue;
                 }
-                    var formatos = new[] { "dd/MM/yyyy", "dd/MM/yyyy HH:mm:ss" };
-                    DateOnly dataBaixa = DateOnly.ParseExact(composicao.DataBaixa, formatos, CultureInfo.InvariantCulture);
 
-                    IncomingPayments incomingPayments = new IncomingPayments();
-                    incomingPayments.Series = 15;
-                    incomingPayments.Remarks = composicao.Obs;
+                var formatos = new[] { "dd/MM/yyyy", "dd/MM/yyyy HH:mm:ss" };
+                DateOnly dataBaixa = DateOnly.ParseExact(composicao.DataBaixa, formatos, CultureInfo.InvariantCulture);
 
-                    // ou usando TryParse:
+                IncomingPayments incomingPayments = new IncomingPayments();
+                incomingPayments.Series = 15;
+                incomingPayments.Remarks = composicao.Obs;
 
-                    incomingPayments.BPLID = filialEmQuestao.IdSap;
-                    
-                    
+                // ou usando TryParse:
 
-                    incomingPayments.TransferSum = Math.Round( nota.GetValorLiquidoNotasDevolucoes() + nota.GetValorLiquidoNotasSaidas(),2);
-                    incomingPayments.TransferDate = dataBaixa;
-                    if (ContaContabil== "2.01.01.02.01")
+                incomingPayments.BPLID = filialEmQuestao.IdSap;
+
+
+
+                incomingPayments.TransferSum = Math.Round(nota.GetValorLiquidoNotasDevolucoes() + nota.GetValorLiquidoNotasSaidas(), 2);
+                incomingPayments.TransferDate = dataBaixa;
+                if (ContaContabil == "2.01.01.02.01")
+                {
+                    incomingPayments.TransferAccount = ContaContabil;
+                    incomingPayments.DocDate = PrimeiroDomingoDoMes(dataBaixa);
+                    incomingPayments.TaxDate = PrimeiroDomingoDoMes(dataBaixa);
+                }
+                else if (ContaContabil == "4.02.01.01.21")
+                {
+                    incomingPayments.TransferAccount = ContaContabil;
+                    incomingPayments.DocDate = dataBaixa;
+                    incomingPayments.TaxDate = dataBaixa;
+                }
+                else
+                {
+                    incomingPayments.TransferAccount = composicao.ContaContabil;
+                    incomingPayments.DocDate = dataBaixa;
+                    incomingPayments.TaxDate = dataBaixa;
+                }
+
+
+                incomingPayments.CardCode = nota.Cl;
+                var paymentInvoices = incomingPaymentsService.MontarComposicaoSap(composicao, nota.Cl);
+                incomingPayments.PaymentInvoices = paymentInvoices;
+                incomingPayments.U_ContaContabilDeOrigem = composicao.ContaContabil;
+                double totalCashFlow = Math.Round(nota.GetValorLiquidoNotasDevolucoes() + nota.GetValorLiquidoNotasSaidas(), 2);
+
+                if (ContaContabil != "2.01.01.02.01" && ContaContabil != "4.02.01.01.21")
+                {
+                    CashFlowAssignments cashFlowAssignments = new CashFlowAssignments
                     {
-                        incomingPayments.TransferAccount = ContaContabil;
-                        incomingPayments.DocDate = PrimeiroDomingoDoMes(dataBaixa);
-                        incomingPayments.TaxDate = PrimeiroDomingoDoMes(dataBaixa);
-                    }else if (ContaContabil == "4.02.01.01.21")
-                    {
-                        incomingPayments.TransferAccount = ContaContabil;
-                        incomingPayments.DocDate = dataBaixa;
-                        incomingPayments.TaxDate = dataBaixa;    
-                    }
-                    else
-                    {
-                        incomingPayments.TransferAccount = composicao.ContaContabil;
-                        incomingPayments.DocDate = dataBaixa;
-                        incomingPayments.TaxDate = dataBaixa;
-                    }
-                    
+                        PaymentMeans = "pmtBankTransfer"//,
+                                                        //AmountLC = totalCashFlow
+                    };
+                    incomingPayments.CashFlowAssignments = new List<CashFlowAssignments> { cashFlowAssignments };
+                }
+                //incomingPayments.UnderOverpaymentdifference = totalCashFlow - totalComposicaoLiquido;
+                var Json = JsonSerializer.Serialize(incomingPayments, new JsonSerializerOptions
+                {
+                    WriteIndented = true
+                });
+                Console.WriteLine(Json);
+                var result = serviceLayerService.RealizarBaixasContasAReceber(Json);
+                var resultadoComoString = result.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 
-                    incomingPayments.CardCode = nota.Cl;
-                    var paymentInvoices = incomingPaymentsService.MontarComposicaoSap(composicao, nota.Cl);
-                    incomingPayments.PaymentInvoices = paymentInvoices;
-                    incomingPayments.U_ContaContabilDeOrigem = composicao.ContaContabil;
-                    double totalCashFlow = Math.Round(nota.GetValorLiquidoNotasDevolucoes() + nota.GetValorLiquidoNotasSaidas(), 2);
+                if (!result.IsSuccessStatusCode)
+                {
 
-                    if (ContaContabil != "2.01.01.02.01" && ContaContabil != "4.02.01.01.21")
+                    errosEncontrados.Add($"O CL {incomingPayments.CardCode} não foi baixado devido ao seguinte problema:{resultadoComoString}");
+                    await AlterarClQuePossuiErros(baixasCR.id, nota.Cl, errosEncontrados);
+                }
+                else
+                {
+                    try
                     {
-                        CashFlowAssignments cashFlowAssignments = new CashFlowAssignments
+                        using (JsonDocument doc = JsonDocument.Parse(resultadoComoString))
                         {
-                            PaymentMeans = "pmtBankTransfer"//,
-                            //AmountLC = totalCashFlow
-                        };
-                        incomingPayments.CashFlowAssignments = new List<CashFlowAssignments> { cashFlowAssignments };
-                    }
-                    //incomingPayments.UnderOverpaymentdifference = totalCashFlow - totalComposicaoLiquido;
-                    var Json = JsonSerializer.Serialize(incomingPayments, new JsonSerializerOptions
-                    {
-                        WriteIndented = true
-                    });
-                    Console.WriteLine(Json);
-                    var result = serviceLayerService.RealizarBaixasContasAReceber(Json);
-                    var resultadoComoString = result.Content.ReadAsStringAsync().GetAwaiter().GetResult();
-                    
-                    if (!result.IsSuccessStatusCode)
-                    {
-                        
-                        errosEncontrados.Add($"O CL {incomingPayments.CardCode} não foi baixado devido ao seguinte problema:{resultadoComoString}");
-                            
-                    }
-                    else
-                    {
-                        try
-                        {
-                            using (JsonDocument doc = JsonDocument.Parse(resultadoComoString))
+                            JsonElement root = doc.RootElement;
+
+                            if (root.TryGetProperty("DocEntry", out JsonElement docEntryElement) && root.TryGetProperty("DocNum", out JsonElement docNumElement))
                             {
-                                JsonElement root = doc.RootElement;
+                                int docEntry = docEntryElement.GetInt32();
+                                int docNum = docNumElement.GetInt32();
+                                await AlterarNotasQueForamBaixadasComSucesso(baixasCR.id, nota.Cl, docNum, docEntry);
+                                Console.WriteLine($"DocEntry: {docEntry}");
 
-                                if (root.TryGetProperty("DocEntry", out JsonElement docNumElement))
-                                {
-                                    int docEntry = docNumElement.GetInt32();
-                                    Console.WriteLine($"DocEntry: {docEntry}");
-
-                                    
-                                    composicao.documentoCriados.Add(docEntry);
-                                    Dictionary<string, List<string>> docs = new Dictionary<string, List<string>>();
-                                    
-                                    //docs[$"{docEntry}"].AddRange(paymentInvoices.Select(x=>x.DocEntry.ToString()));
-                                    //baixasCR.baixas_e_docs_vinculados.Add(docs);
-                                    //Context.Update(baixasCR);
-                                    //await Context.SaveChangesAsync();
                             }
                             else
-                                {
-                                    Console.WriteLine("Campo docEntry não encontrado na resposta.");
-                                }
+                            {
+                                Console.WriteLine("Campo docEntry não encontrado na resposta.");
                             }
                         }
-                        catch (JsonException ex)
-                        {
-                            Console.WriteLine("Erro ao ler JSON: " + ex.Message);
-                        }
-                     }
-                    Console.WriteLine(resultadoComoString);
-                
+                    }
+                    catch (JsonException ex)
+                    {
+                        Console.WriteLine("Erro ao ler JSON: " + ex.Message);
+                    }
+                }
+                Console.WriteLine(resultadoComoString);
+
             }
             return composicao;
+
+        }
+        public void GetNotasComErros()
+        {
 
         }
         public Composicao GetComposicao(XLWorkbook composicao)
@@ -187,6 +293,11 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             var obs = worksheet.Cell(6, 2).GetValue<string>();
             var lastRow = worksheet.LastRowUsed().RowNumber();
             var lastCol = worksheet.LastColumnUsed().ColumnNumber();
+            if (lastRow > 100000)
+            {
+                throw new Exception("Composição possui mais de 100000 notas a serem baixadas! Verifique o seu arquivo excel");
+
+            }
             DataFrameColumn[] composicaoNotas = GetNotasFiscais(worksheet, lastRow);
             Composicao composicaoDTo = new Composicao
             {
@@ -269,7 +380,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             // Retornar como DateOnly
             return DateOnly.FromDateTime(primeiroDomingo);
         }
-        public Dictionary<string,int> GetDocsMinimos(DataFrame dataFrame)
+        public Dictionary<string, int> GetDocsMinimos(DataFrame dataFrame)
         {
             var numeroInternoCol = dataFrame.Columns["NUMERO INTERNO"] as StringDataFrameColumn;
             var tipoDocCol = dataFrame.Columns["TIPO DO DOCUMENTO"] as StringDataFrameColumn;
@@ -441,21 +552,21 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
 
         }
 
-        public BaixasCR SalvarInstanciaBaixa(byte[]? arquivoExcel,string listaComErros,string nomeArquivo,Composicao composicao, string extensao,List<Dictionary<String, List<String>>> notasJson, string adiantamentoCliente)
+        public BaixasCR SalvarInstanciaBaixa(byte[]? arquivoExcel, string listaComErros, string nomeArquivo, Composicao composicao, string extensao, List<Dictionary<String, List<String>>> notasJson, string adiantamentoCliente)
         {
             BaixasCR baixasCR = new BaixasCR();
 
             baixasCR.status = listaComErros;
             baixasCR.data_Atualizacao = DateTime.UtcNow;
             baixasCR.nome_arquivo = nomeArquivo;
-            if (arquivoExcel !=  null)
+            if (arquivoExcel != null)
             {
                 baixasCR.arquivo_excel = arquivoExcel;
             }
-            if(composicao == null)
+            if (composicao == null)
             {
                 throw new ArgumentNullException("Não informado nenhum objeto de composição.");
-                
+
             }
             string[] formatosAceitos = { "dd/MM/yyyy", "dd/MM/yyyy HH:mm:ss" };
 
@@ -477,20 +588,20 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             baixasCR.json_erros = listaComErrosNotasJson;
 
             baixasCR.nro_baixas = new List<int>();
-            if(adiantamentoCliente == "null")
+            if (adiantamentoCliente == "null")
             {
                 adiantamentoCliente = composicao.ContaContabil;
 
             }
             baixasCR.conta_contabil_efetiva = adiantamentoCliente;
-            BaixasCR baixaEncontrada = Context.BaixasCR.FirstOrDefault(x => x.data_baixa == dataFiltrada.ToString("dd/MM/yyyy") && x.filial ==composicao.Filial && x.conta_contabil ==composicao.ContaContabil && x.rede == composicao.Rede);
-            if(baixaEncontrada == null)
+            BaixasCR baixaEncontrada = Context.BaixasCR.FirstOrDefault(x => x.data_baixa == dataFiltrada.ToString("dd/MM/yyyy") && x.filial == composicao.Filial && x.conta_contabil == composicao.ContaContabil && x.rede == composicao.Rede);
+            if (baixaEncontrada == null)
             {
                 Context.Add(baixasCR);
             }
             else
             {
-                if(listaComErros =="")
+                if (listaComErros == "")
                 {
                     listaComErros = "SEM ERROS";
                 }
@@ -500,16 +611,16 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                     baixasCR.extensao = extensao;
                     baixasCR.arquivo_excel = arquivoExcel;
                 }
-                baixaEncontrada.data_Atualizacao =baixasCR.data_Atualizacao;
+                baixaEncontrada.data_Atualizacao = baixasCR.data_Atualizacao;
                 baixaEncontrada.json_erros = baixasCR.json_erros;
                 baixaEncontrada.conta_contabil_efetiva = adiantamentoCliente;
                 baixasCR = baixaEncontrada;
             }
             Context.SaveChanges();
             return baixasCR;
-     
 
-            
+
+
         }
     }
 }

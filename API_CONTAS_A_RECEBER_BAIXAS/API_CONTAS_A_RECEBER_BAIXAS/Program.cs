@@ -8,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddScoped<ComposicaoService>();
+builder.Services.AddScoped<ServiceLayerService>();
+builder.Services.AddScoped<RelatoriosService>();
 // Add Swagger services
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

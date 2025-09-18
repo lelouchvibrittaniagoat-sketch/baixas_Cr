@@ -20,7 +20,7 @@ public partial class ContasAReceberDbContext : DbContext
     }
 
     public virtual DbSet<NotaFiscaisDeSaida> NotaFiscaisDeSaida { get; set; }
-
+    public virtual DbSet<NotasFiscaisStatus> NotasFiscaisStatus {  get; set; }
     public virtual DbSet<Filiais> Filiais { get; set; }
     public virtual DbSet<NotasFiscaisDevolucao> NotasFiscaisDevolucaos { get; set; }
     public virtual DbSet<Status> Status { get; set; }
@@ -173,7 +173,31 @@ public partial class ContasAReceberDbContext : DbContext
             entity.Property(e => e.Serial).HasColumnType("character varying");
             entity.Property(e => e.SeriesStr).HasColumnType("character varying");
         });
-        
+        modelBuilder.Entity<NotasFiscaisStatus>(entity =>
+        {
+            entity.HasKey(e => e.id).HasName("notas_fiscais_status_pkey");
+
+            entity.ToTable("notas_fiscais_status", "integracoes_sap");
+
+            entity.Property(e => e.id).HasColumnName("id");
+            entity.Property(e => e.nroNota).HasColumnName("nro_nota");
+            entity.Property(e => e.docEntry).HasColumnName("doc_entry");
+            entity.Property(e => e.idBaixa).HasColumnName("id_baixa");
+            entity.Property(e => e.jaBaixado).HasColumnName("ja_baixado");
+            entity.Property(e => e.tipoDoc).HasColumnName("tipo_doc");
+            entity.Property(e => e.docEntryContasAReceber).HasColumnName("doc_entry_contas_a_receber");
+            entity.Property(e => e.docNumContasAReceber).HasColumnName("doc_num_contas_a_receber");
+            entity.Property(e => e.cL).HasColumnName("cl");
+
+            // Armazena erros como JSON em uma coluna do tipo text/jsonb
+            entity.Property(e => e.erros)
+                .HasColumnName("erros")
+                .HasConversion(
+                    v => JsonSerializer.Serialize(v, (JsonSerializerOptions)null),
+                    v => JsonSerializer.Deserialize<List<string>>(v, (JsonSerializerOptions)null)
+                );
+        });
+
         OnModelCreatingPartial(modelBuilder);
     }
 

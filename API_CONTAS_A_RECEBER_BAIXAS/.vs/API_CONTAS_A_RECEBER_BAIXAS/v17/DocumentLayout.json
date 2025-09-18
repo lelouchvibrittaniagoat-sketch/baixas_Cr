@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|c:\\users\\carlo\\downloads\\baixas_cr\\api_contas_a_receber_baixas\\api_contas_a_receber_baixas\\context\\contasareceberdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|solutionrelative:api_contas_a_receber_baixas\\context\\contasareceberdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|c:\\users\\carlo\\downloads\\baixas_cr\\api_contas_a_receber_baixas\\api_contas_a_receber_baixas\\models\\notasfiscaisdevolucao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|solutionrelative:api_contas_a_receber_baixas\\models\\notasfiscaisdevolucao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|c:\\users\\carlo\\downloads\\baixas_cr\\api_contas_a_receber_baixas\\api_contas_a_receber_baixas\\controllers\\composicaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|solutionrelative:api_contas_a_receber_baixas\\controllers\\composicaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,20 +19,20 @@
       "RelativeMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|solutionrelative:api_contas_a_receber_baixas\\services\\composicaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|c:\\users\\carlo\\downloads\\baixas_cr\\api_contas_a_receber_baixas\\api_contas_a_receber_baixas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|solutionrelative:api_contas_a_receber_baixas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|c:\\users\\carlo\\downloads\\baixas_cr\\api_contas_a_receber_baixas\\api_contas_a_receber_baixas\\models\\notafiscaisdesaida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|solutionrelative:api_contas_a_receber_baixas\\models\\notafiscaisdesaida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|c:\\users\\carlo\\downloads\\baixas_cr\\api_contas_a_receber_baixas\\api_contas_a_receber_baixas\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|solutionrelative:api_contas_a_receber_baixas\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|c:\\users\\carlo\\downloads\\baixas_cr\\api_contas_a_receber_baixas\\api_contas_a_receber_baixas\\models\\problemasnotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|solutionrelative:api_contas_a_receber_baixas\\models\\problemasnotas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|c:\\users\\carlo\\downloads\\baixas_cr\\api_contas_a_receber_baixas\\api_contas_a_receber_baixas\\models\\notasfiscaisdevolucao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|solutionrelative:api_contas_a_receber_baixas\\models\\notasfiscaisdevolucao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|c:\\users\\carlo\\downloads\\baixas_cr\\api_contas_a_receber_baixas\\api_contas_a_receber_baixas\\models\\notafiscaisdesaida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|solutionrelative:api_contas_a_receber_baixas\\models\\notafiscaisdesaida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1D2B78E-E53F-4F9E-AF42-EABE9B20AFED}|API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS.csproj|c:\\users\\carlo\\downloads\\baixas_cr\\api_contas_a_receber_baixas\\api_contas_a_receber_baixas\\models\\incomingpayments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,32 +63,56 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ContasAReceberDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Context\\ContasAReceberDbContext.cs",
+              "RelativeDocumentMoniker": "API_CONTAS_A_RECEBER_BAIXAS\\Context\\ContasAReceberDbContext.cs",
+              "ToolTip": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Context\\ContasAReceberDbContext.cs",
+              "RelativeToolTip": "API_CONTAS_A_RECEBER_BAIXAS\\Context\\ContasAReceberDbContext.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAgwMMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T00:15:36.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ComposicaoService.cs",
+              "DocumentMoniker": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Services\\ComposicaoService.cs",
+              "RelativeDocumentMoniker": "API_CONTAS_A_RECEBER_BAIXAS\\Services\\ComposicaoService.cs",
+              "ToolTip": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Services\\ComposicaoService.cs",
+              "RelativeToolTip": "API_CONTAS_A_RECEBER_BAIXAS\\Services\\ComposicaoService.cs",
+              "ViewState": "AgIAACgBAAAAAAAAAAAhwDkBAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T00:00:10.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Program.cs",
+              "RelativeDocumentMoniker": "API_CONTAS_A_RECEBER_BAIXAS\\Program.cs",
+              "ToolTip": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Program.cs",
+              "RelativeToolTip": "API_CONTAS_A_RECEBER_BAIXAS\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T23:02:20.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ComposicaoController.cs",
               "DocumentMoniker": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Controllers\\ComposicaoController.cs",
               "RelativeDocumentMoniker": "API_CONTAS_A_RECEBER_BAIXAS\\Controllers\\ComposicaoController.cs",
               "ToolTip": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Controllers\\ComposicaoController.cs",
               "RelativeToolTip": "API_CONTAS_A_RECEBER_BAIXAS\\Controllers\\ComposicaoController.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAmwJQAAAB1AAAAAAAAAA==",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAuwN0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-14T23:48:14.798Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ComposicaoService.cs",
-              "DocumentMoniker": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Services\\ComposicaoService.cs",
-              "RelativeDocumentMoniker": "API_CONTAS_A_RECEBER_BAIXAS\\Services\\ComposicaoService.cs",
-              "ToolTip": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Services\\ComposicaoService.cs",
-              "RelativeToolTip": "API_CONTAS_A_RECEBER_BAIXAS\\Services\\ComposicaoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T23:48:12.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Status.cs",
               "DocumentMoniker": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Models\\Status.cs",
               "RelativeDocumentMoniker": "API_CONTAS_A_RECEBER_BAIXAS\\Models\\Status.cs",
@@ -92,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "ProblemasNotas.cs",
               "DocumentMoniker": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Models\\ProblemasNotas.cs",
               "RelativeDocumentMoniker": "API_CONTAS_A_RECEBER_BAIXAS\\Models\\ProblemasNotas.cs",
@@ -104,15 +136,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "NotasFiscaisDevolucao.cs",
               "DocumentMoniker": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Models\\NotasFiscaisDevolucao.cs",
               "RelativeDocumentMoniker": "API_CONTAS_A_RECEBER_BAIXAS\\Models\\NotasFiscaisDevolucao.cs",
               "ToolTip": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Models\\NotasFiscaisDevolucao.cs",
               "RelativeToolTip": "API_CONTAS_A_RECEBER_BAIXAS\\Models\\NotasFiscaisDevolucao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T14:55:21.543Z"
+              "WhenOpened": "2025-09-14T14:55:21.543Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -128,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "IncomingPayments.cs",
               "DocumentMoniker": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Models\\IncomingPayments.cs",
               "RelativeDocumentMoniker": "API_CONTAS_A_RECEBER_BAIXAS\\Models\\IncomingPayments.cs",
@@ -140,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Filiais.cs",
               "DocumentMoniker": "C:\\Users\\carlo\\Downloads\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\Models\\Filiais.cs",
               "RelativeDocumentMoniker": "API_CONTAS_A_RECEBER_BAIXAS\\Models\\Filiais.cs",
