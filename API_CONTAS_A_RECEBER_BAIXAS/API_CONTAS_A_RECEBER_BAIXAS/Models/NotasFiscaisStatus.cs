@@ -3,7 +3,7 @@
     public class NotasFiscaisStatus
     {
         public int id {  get; set; }
-        public int nroNota { get; set; }
+        public int docNum { get; set; }
         public int docEntry { get; set; }
         public List<string> erros { get; set; }
         public int idBaixa {  get; set; }

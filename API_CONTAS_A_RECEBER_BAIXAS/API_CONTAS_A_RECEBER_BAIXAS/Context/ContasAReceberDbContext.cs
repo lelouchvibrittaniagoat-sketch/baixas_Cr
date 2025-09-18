@@ -180,7 +180,7 @@ public partial class ContasAReceberDbContext : DbContext
             entity.ToTable("notas_fiscais_status", "integracoes_sap");
 
             entity.Property(e => e.id).HasColumnName("id");
-            entity.Property(e => e.nroNota).HasColumnName("nro_nota");
+            entity.Property(e => e.docNum).HasColumnName("doc_num");
             entity.Property(e => e.docEntry).HasColumnName("doc_entry");
             entity.Property(e => e.idBaixa).HasColumnName("id_baixa");
             entity.Property(e => e.jaBaixado).HasColumnName("ja_baixado");
@@ -192,6 +192,7 @@ public partial class ContasAReceberDbContext : DbContext
             // Armazena erros como JSON em uma coluna do tipo text/jsonb
             entity.Property(e => e.erros)
                 .HasColumnName("erros")
+                .HasColumnType("jsonb")
                 .HasConversion(
                     v => JsonSerializer.Serialize(v, (JsonSerializerOptions)null),
                     v => JsonSerializer.Deserialize<List<string>>(v, (JsonSerializerOptions)null)

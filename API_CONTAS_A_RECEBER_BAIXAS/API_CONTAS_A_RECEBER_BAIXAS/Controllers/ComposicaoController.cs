@@ -230,7 +230,6 @@ public class ComposicaoController : ControllerBase
 
             // tudo ok
             baixasCR.status = "SEM ERROS";
-            baixasCR.nro_baixas.AddRange(composicaoResult.documentoCriados);
             _composicaoService.Context.BaixasCR.Update(baixasCR);
             await _composicaoService.Context.SaveChangesAsync();
 

@@ -48,8 +48,8 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             bool possuiProblemas = false;
             foreach (var x in notasASeremBaixadas.NotasFiscaisSaida)
             {
-                var nf = (NotaFiscaisDeSaida)x.NotaFiscalAnalisadaBanco;
-                int docEntry = int.Parse(nf.DocEntry);
+                var nf = (NotaDeSaidaGetDto)x.NotaFiscalAnalisadaBanco;
+                int docEntry = nf.DocEntry;
 
                 var existente = Context.NotasFiscaisStatus
                     .FirstOrDefault(s => s.idBaixa == idBaixa && s.docEntry == docEntry);
@@ -58,11 +58,12 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                 {
                     existente = new NotasFiscaisStatus
                     {
-                        nroNota = int.Parse(nf.Serial),
+                        docNum = nf.DocNum,
                         docEntry = docEntry,
                         idBaixa = idBaixa,
                         tipoDoc = 13,
-                        erros = new List<string>()
+                        erros = new List<string>(),
+                        cL = nf.CardCode
                     };
                     Context.NotasFiscaisStatus.Add(existente);
                 }
@@ -87,8 +88,8 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             // Notas de devolução
             foreach (var x in notasASeremBaixadas.NotasFiscaisDevolucao)
             {
-                var nf = (NotasFiscaisDevolucao)x.NotaFiscalAnalisadaBanco;
-                int docEntry = int.Parse(nf.DocEntry);
+                var nf = (NotaDeDevolucaoGetDto)x.NotaFiscalAnalisadaBanco;
+                int docEntry = nf.DocEntry;
 
                 var existente = Context.NotasFiscaisStatus
                     .FirstOrDefault(s => s.idBaixa == idBaixa && s.docEntry == docEntry);
@@ -97,11 +98,13 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                 {
                     existente = new NotasFiscaisStatus
                     {
-                        nroNota = int.Parse(nf.Serial),
+                        //nroNota = int.Parse(nf.Serial),
+                        docNum = nf.DocNum,
                         docEntry = docEntry,
                         idBaixa = idBaixa,
                         tipoDoc = 14,
-                        erros = new List<string>()
+                        erros = new List<string>(),
+                        cL = nf.CardCode
                     };
                     Context.NotasFiscaisStatus.Add(existente);
                 }
@@ -242,9 +245,9 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
 
                 if (!result.IsSuccessStatusCode)
                 {
-
-                    errosEncontrados.Add($"O CL {incomingPayments.CardCode} não foi baixado devido ao seguinte problema:{resultadoComoString}");
-                    await AlterarClQuePossuiErros(baixasCR.id, nota.Cl, errosEncontrados);
+                    List<string> erroEncontradoT = new List<string>();
+                    erroEncontradoT.Add($"O CL {incomingPayments.CardCode} não foi baixado devido ao seguinte problema:{resultadoComoString}");
+                    await AlterarClQuePossuiErros(baixasCR.id, nota.Cl, erroEncontradoT);
                 }
                 else
                 {
