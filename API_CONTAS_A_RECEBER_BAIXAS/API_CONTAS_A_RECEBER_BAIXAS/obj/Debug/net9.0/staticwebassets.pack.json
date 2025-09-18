@@ -269,6 +269,18 @@
       "PackagePath": "staticwebassets\\arquivos\\arquivo_20250911_112036.xlsx"
     },
     {
+      "Id": "C:\\Users\\JFC\\Downloads\\NOVA_VERSAO\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250918_122030.xlsx",
+      "PackagePath": "staticwebassets\\arquivos\\arquivo_20250918_122030.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\JFC\\Downloads\\NOVA_VERSAO\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250918_122426.xlsx",
+      "PackagePath": "staticwebassets\\arquivos\\arquivo_20250918_122426.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\JFC\\Downloads\\NOVA_VERSAO\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250918_122608.xlsx",
+      "PackagePath": "staticwebassets\\arquivos\\arquivo_20250918_122608.xlsx"
+    },
+    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.API_CONTAS_A_RECEBER_BAIXAS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

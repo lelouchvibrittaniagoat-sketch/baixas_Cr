@@ -18,6 +18,26 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             notaDeDevolucaoGetDtos = new List<NotaDeDevolucaoGetDto>();
             notaDeSaidaGetDtos = new List<NotaDeSaidaGetDto>();
         }
+        public bool VerificarSeBaixaPossuiErros(int idBaixa)
+        {
+            if (idBaixa == 0)
+            {
+                throw new Exception("Erro de id baixa.");
+            }
+            List<NotasFiscaisStatus> notasFiscaisStatuses =  this.Context.NotasFiscaisStatus.Where(x=>x.idBaixa ==idBaixa).ToList();
+            List<bool> notasComProblemas = notasFiscaisStatuses.Select(x => x.possuiErros == true).ToList();
+            return notasComProblemas.Any();
+        }
+        public List<NotasFiscaisStatus> GetNotasComErroDaBaixa(int idBaixa)
+        {
+            if (idBaixa == 0)
+            {
+                throw new Exception("Erro de id baixa.");
+            }
+            List<NotasFiscaisStatus> notasFiscaisStatuses = this.Context.NotasFiscaisStatus.Where(x => x.idBaixa == idBaixa).ToList();
+            List<NotasFiscaisStatus> notasComProblemas = notasFiscaisStatuses.Where(x => x.possuiErros == true).ToList();
+            return notasComProblemas;
+        }
         public async Task SalvarDados(List<NotaDeDevolucaoGetDto> notaDevolucao, List<NotaDeSaidaGetDto> notasSaida)
         {
             // Pega todos os DocEntry das duas listas (para as duas entidades)

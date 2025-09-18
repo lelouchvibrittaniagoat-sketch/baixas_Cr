@@ -56,6 +56,9 @@ wwwroot\arquivos\arquivo_20250911_083944.xlsx
 wwwroot\arquivos\arquivo_20250911_084111.xlsx
 wwwroot\arquivos\arquivo_20250911_112032.xlsx
 wwwroot\arquivos\arquivo_20250911_112036.xlsx
+wwwroot\arquivos\arquivo_20250918_122030.xlsx
+wwwroot\arquivos\arquivo_20250918_122426.xlsx
+wwwroot\arquivos\arquivo_20250918_122608.xlsx
 wwwroot\arquivos\ComposicaoComErros_177..xlsx
 wwwroot\arquivos\ComposicaoComErros_179..xlsm
 wwwroot\arquivos\ComposicaoComErros_182..xlsx

@@ -696,6 +696,42 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-l1tHbiJf5UaXLWiBJzjrOvCgI8yt0lw4nm3uGlbS2k8="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"24575"},{"Name":"Content-Type","Value":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"},{"Name":"ETag","Value":"\u0022l1tHbiJf5UaXLWiBJzjrOvCgI8yt0lw4nm3uGlbS2k8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 11:46:19 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/API_CONTAS_A_RECEBER_BAIXAS/arquivos/arquivo_20250918_122030.0ylkg3kyyp.xlsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250918_122030.xlsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0ylkg3kyyp"},{"Name":"integrity","Value":"sha256-GGiQC7lwCxolPWzBbrFkj7z2lAaHkXO2lZmrgCLRCas="},{"Name":"label","Value":"_content/API_CONTAS_A_RECEBER_BAIXAS/arquivos/arquivo_20250918_122030.xlsx"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"15054"},{"Name":"Content-Type","Value":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"},{"Name":"ETag","Value":"\u0022GGiQC7lwCxolPWzBbrFkj7z2lAaHkXO2lZmrgCLRCas=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 15:20:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/API_CONTAS_A_RECEBER_BAIXAS/arquivos/arquivo_20250918_122030.xlsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250918_122030.xlsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-GGiQC7lwCxolPWzBbrFkj7z2lAaHkXO2lZmrgCLRCas="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"15054"},{"Name":"Content-Type","Value":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"},{"Name":"ETag","Value":"\u0022GGiQC7lwCxolPWzBbrFkj7z2lAaHkXO2lZmrgCLRCas=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 15:20:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/API_CONTAS_A_RECEBER_BAIXAS/arquivos/arquivo_20250918_122426.041omb5tfy.xlsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250918_122426.xlsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"041omb5tfy"},{"Name":"integrity","Value":"sha256-YHImhc6rLhnMumB9KMLK35f59fBa0tHT566vn/XzwGg="},{"Name":"label","Value":"_content/API_CONTAS_A_RECEBER_BAIXAS/arquivos/arquivo_20250918_122426.xlsx"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11289"},{"Name":"Content-Type","Value":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"},{"Name":"ETag","Value":"\u0022YHImhc6rLhnMumB9KMLK35f59fBa0tHT566vn/XzwGg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 15:24:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/API_CONTAS_A_RECEBER_BAIXAS/arquivos/arquivo_20250918_122426.xlsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250918_122426.xlsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YHImhc6rLhnMumB9KMLK35f59fBa0tHT566vn/XzwGg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"11289"},{"Name":"Content-Type","Value":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"},{"Name":"ETag","Value":"\u0022YHImhc6rLhnMumB9KMLK35f59fBa0tHT566vn/XzwGg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 15:24:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/API_CONTAS_A_RECEBER_BAIXAS/arquivos/arquivo_20250918_122608.hvsrcsi3uv.xlsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250918_122608.xlsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hvsrcsi3uv"},{"Name":"integrity","Value":"sha256-7SbVmsmLzjwgWBGIl7xW2F5HWSy8GPPX3KAlFHkHKSs="},{"Name":"label","Value":"_content/API_CONTAS_A_RECEBER_BAIXAS/arquivos/arquivo_20250918_122608.xlsx"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"36136"},{"Name":"Content-Type","Value":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"},{"Name":"ETag","Value":"\u00227SbVmsmLzjwgWBGIl7xW2F5HWSy8GPPX3KAlFHkHKSs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 15:26:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/API_CONTAS_A_RECEBER_BAIXAS/arquivos/arquivo_20250918_122608.xlsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250918_122608.xlsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-7SbVmsmLzjwgWBGIl7xW2F5HWSy8GPPX3KAlFHkHKSs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"36136"},{"Name":"Content-Type","Value":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"},{"Name":"ETag","Value":"\u00227SbVmsmLzjwgWBGIl7xW2F5HWSy8GPPX3KAlFHkHKSs=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 15:26:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/API_CONTAS_A_RECEBER_BAIXAS/arquivos/ComposicaoComErros_177..i9d6o6cn3f.xlsx">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\ComposicaoComErros_177..xlsx'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

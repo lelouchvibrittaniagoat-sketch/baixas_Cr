@@ -5,6 +5,7 @@ using System.Text.Json;
 using API_CONTAS_A_RECEBER_BAIXAS.Models_context;
 using API_CONTAS_A_RECEBER_BAIXAS.Services;
 using API_CONTAS_A_RECEBER_BAIXAS.DTOS;
+using API_CONTAS_A_RECEBER_BAIXAS.Models;
 
 [ApiController]
 [Route("[controller]")]
@@ -212,20 +213,21 @@ public class ComposicaoController : ControllerBase
                 return BadRequest(new { Erros = $"Os headers: {string.Join(", ", headersComProblema)} não condizem com os cabeçalhos válidos." });
 
             var composicaoResult = await _composicaoService.MainExecution(composicao, erroService.listaComErros, adiantamentoCliente, baixasCR);
+            var baixaPossuiProblemas = _relatoriosService.VerificarSeBaixaPossuiErros(baixasCR.id);
 
-            if (_composicaoService.listaComErrosNotasJson.Count > 0)
+            if (baixaPossuiProblemas)
             {
-                var errosString = JsonSerializer.Serialize(_composicaoService.listaComErrosNotasJson);
-                _composicaoService.SalvarInstanciaBaixa(null, errosString, file.FileName, composicao, extensao, _composicaoService.listaComErrosNotasJson, adiantamentoCliente);
-                return BadRequest(new { Erros = erroService.GetListaDeErrosTratadosString() });
-            }
+                List<NotasFiscaisStatus> notasFiscaisStatuses = _relatoriosService.GetNotasComErroDaBaixa(baixasCR.id);
 
-            if (erroService.listaComErros.Count > 0)
-            {
-                var errosString = string.Join(", ", erroService.listaComErros);
-                erroService.CriarDevolutivaDeErrosBaseadoEmDePara();
-                _composicaoService.SalvarInstanciaBaixa(null, erroService.GetListaDeErrosTratadosString(), file.FileName, composicao, extensao, _composicaoService.listaComErrosNotasJson, adiantamentoCliente);
-                return BadRequest(new { Erros = erroService.GetListaDeErrosTratadosString() });
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                    WriteIndented = true // opcional, deixa o JSON "bonitinho"
+                };
+
+                string jsonTratado = JsonSerializer.Serialize(notasFiscaisStatuses, options);
+
+                return BadRequest(new { erros = jsonTratado });
             }
 
             // tudo ok
