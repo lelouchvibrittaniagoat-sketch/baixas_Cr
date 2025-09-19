@@ -59,12 +59,15 @@ wwwroot\arquivos\arquivo_20250911_112036.xlsx
 wwwroot\arquivos\arquivo_20250918_122030.xlsx
 wwwroot\arquivos\arquivo_20250918_122426.xlsx
 wwwroot\arquivos\arquivo_20250918_122608.xlsx
+wwwroot\arquivos\arquivo_20250919_090742.xlsx
+wwwroot\arquivos\arquivo_20250919_090819.xlsx
 wwwroot\arquivos\ComposicaoComErros_177..xlsx
 wwwroot\arquivos\ComposicaoComErros_179..xlsm
 wwwroot\arquivos\ComposicaoComErros_182..xlsx
 wwwroot\arquivos\ComposicaoComErros_188..xlsx
 wwwroot\arquivos\ComposicaoComErros_192..xlsx
 wwwroot\arquivos\ComposicaoComErros_196..xlsx
+wwwroot\arquivos\ComposicaoComErros_368..xlsx
 wwwroot\arquivos\Modelo_padrao_automacao_V1.9.5 (1).xlsm
 wwwroot\arquivos\RELATORIO CARREFOUR F09 - DATA REF DO PG 13-8-2025 - REF GERACAO 2682025-121612.xlsm
 wwwroot\arquivos\RELATORIO CARREFOUR F09 - DATA REF DO PG 20-8-2025 - REF GERACAO 2682025-121620.xlsm

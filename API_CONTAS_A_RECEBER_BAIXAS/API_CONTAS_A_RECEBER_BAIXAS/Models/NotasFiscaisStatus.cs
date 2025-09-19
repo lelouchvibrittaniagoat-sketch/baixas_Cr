@@ -8,7 +8,7 @@
         public List<string> erros { get; set; }
         public int idBaixa {  get; set; }
         public bool jaBaixado { get; set; }
-        public bool possuiErros { get { return erros.Count > 0 ? true : false; } }
+        public bool possuiErros { get { return erros.Count > 0 ? true:false; } }
         public int tipoDoc { get; set; }
         public int docEntryContasAReceber { get; set; }
         public int docNumContasAReceber { get; set; }

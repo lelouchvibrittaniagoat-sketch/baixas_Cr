@@ -1098,6 +1098,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250918_122608.xlsx'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250919_090742.xlsx'))">
+      <SourceType>Package</SourceType>
+      <SourceId>API_CONTAS_A_RECEBER_BAIXAS</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/API_CONTAS_A_RECEBER_BAIXAS</BasePath>
+      <RelativePath>arquivos/arquivo_20250919_090742.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>7iz0k6flyh</Fingerprint>
+      <Integrity>v080jgogSixM7oY3EnPpR7l217f7/JWMxW0zc1AP76U=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250919_090742.xlsx'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250919_090819.xlsx'))">
+      <SourceType>Package</SourceType>
+      <SourceId>API_CONTAS_A_RECEBER_BAIXAS</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/API_CONTAS_A_RECEBER_BAIXAS</BasePath>
+      <RelativePath>arquivos/arquivo_20250919_090819.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4k0vea6xix</Fingerprint>
+      <Integrity>lOoN9rqfLmB8ixY9W5KCPYSUae+DTYp5q06yaC4uP+8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250919_090819.xlsx'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\ComposicaoComErros_177..xlsx'))">
       <SourceType>Package</SourceType>
       <SourceId>API_CONTAS_A_RECEBER_BAIXAS</SourceId>
@@ -1205,6 +1241,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\ComposicaoComErros_196..xlsx'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\ComposicaoComErros_368..xlsx'))">
+      <SourceType>Package</SourceType>
+      <SourceId>API_CONTAS_A_RECEBER_BAIXAS</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/API_CONTAS_A_RECEBER_BAIXAS</BasePath>
+      <RelativePath>arquivos/ComposicaoComErros_368..xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>cysztny0su</Fingerprint>
+      <Integrity>VJaZNCe3MscFeXrMHZrAhn1/F9Mqo9AVRhbyVD6XRxA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\ComposicaoComErros_368..xlsx'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\Modelo_padrao_automacao_V1.9.5 (1).xlsm'))">
       <SourceType>Package</SourceType>

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_CONTAS_A_RECEBER_BAIXAS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03ceec91c80f271d14fe1a2cd48b3945e8033b67")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ecc641c94bf888a5211ad255da44605897d537d")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_CONTAS_A_RECEBER_BAIXAS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_CONTAS_A_RECEBER_BAIXAS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -111,19 +111,20 @@ public class ComposicaoController : ControllerBase
 
         return Ok(dict);
     }
-
+    
     [HttpGet("GetComposicaoComErros")]
     public async Task<IActionResult> GetComposicaoComErros(int idBaixasCr)
     {
         var baixasCR = await _composicaoService.Context.BaixasCR
             .FirstOrDefaultAsync(x => x.id == idBaixasCr);
 
-        if (baixasCR == null) return BadRequest(new { Erros = "Essa baixa não existe em nosso banco de dados" });
+        if (baixasCR == null)
+            return BadRequest(new { Erros = "Essa baixa não existe em nosso banco de dados" });
 
         byte[] result;
         try
         {
-            result = await _composicaoService.CriarComposicaoComErros(idBaixasCr);
+            result = await _composicaoService.CriarComposicaoComErrosV2(idBaixasCr);
         }
         catch (Exception ex)
         {
@@ -134,15 +135,19 @@ public class ComposicaoController : ControllerBase
         if (result == null || result.Length == 0)
             return NotFound(new { Erros = "Nenhum arquivo de composição com erros foi encontrado." });
 
-        var nomeArquivoCriado = $"ComposicaoComErros_{idBaixasCr}.{baixasCR.extensao}";
-        var pasta = Path.Combine(_env.WebRootPath ?? Path.Combine(Directory.GetCurrentDirectory(), "wwwroot"), "arquivos");
-        if (!Directory.Exists(pasta)) Directory.CreateDirectory(pasta);
+        // Definir nome do arquivo
+        var nomeArquivo = $"ComposicaoComErros_{idBaixasCr}.{baixasCR.extensao}";
 
-        var caminhoCompleto = Path.Combine(pasta, nomeArquivoCriado);
-        await System.IO.File.WriteAllBytesAsync(caminhoCompleto, result);
+        // Definir Content-Type
+        var contentType = baixasCR.extensao.ToLower() switch
+        {
+            "xlsx" => "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "xls" => "application/vnd.ms-excel",
+            "pdf" => "application/pdf",
+            _ => "application/octet-stream"
+        };
 
-        var urlDownload = $"{Request.Scheme}://{Request.Host}/arquivos/{nomeArquivoCriado}";
-        return Ok(new { Url = urlDownload });
+        return File(result, contentType, nomeArquivo);
     }
 
     // NOTE: mantive seu Upload em grande parte, mas com validações e async corretos.

@@ -13,6 +13,7 @@ using API_CONTAS_A_RECEBER_BAIXAS.Interfaces;
 using System.Security.Cryptography.Xml;
 using System;
 using Microsoft.EntityFrameworkCore;
+using DocumentFormat.OpenXml.ExtendedProperties;
 
 
 namespace API_CONTAS_A_RECEBER_BAIXAS.Services
@@ -40,6 +41,30 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             }
             byte[] arquivoComposicao = composicoesComErro.FirstOrDefault().arquivo_excel;
             return this.AtualizarPlanilhaComErros(arquivoComposicao, composicoesComErro.FirstOrDefault().json_erros).arquivoAtualizado;
+        }
+        public async Task<byte[]> CriarComposicaoComErrosV2(int idBaixa)
+        {
+            List<NotasFiscaisStatus> notasFiscaisStatuses =  Context.NotasFiscaisStatus.Where(x => x.erros.Count>0 &&   x.idBaixa == idBaixa).ToList();
+            if(notasFiscaisStatuses.Count == 0 )
+            {
+                return null;
+            }
+
+            var composicoesComErro = Context.BaixasCR.Where(x =>x.id == idBaixa).ToList();
+            var erros = Context.NotasFiscaisStatus
+                    .Select(n => new Dictionary<string, List<string>>
+                    {
+                        { n.docNum.ToString(), n.erros }
+                    })
+                    .ToList();
+
+            if (composicoesComErro.Count == 0)
+            {
+                return null;
+            }
+
+            byte[] arquivoComposicao = composicoesComErro.FirstOrDefault().arquivo_excel;
+            return this.AtualizarPlanilhaComErros(arquivoComposicao, erros).arquivoAtualizado;
         }
         public bool SalvarNotasNoBanco(NotasASeremBaixadas notasASeremBaixadas, int idBaixa)
         {
@@ -76,9 +101,11 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                         List<string> list = new List<string>();
                         list.Add($"Essa nota fiscal já foi baixada pela automação anteriormente. Verique a baixa N°:{existente.docNumContasAReceber}");
                         existente.erros = list;
+                        existente.jaBaixado = true;
                     }
                     else
                     {
+                        existente.jaBaixado = false;
                         existente.erros = x.Problemas;
                     }
                 }
@@ -119,9 +146,11 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                         List<string> list = new List<string>();
                         list.Add($"Essa nota fiscal já foi baixada pela automação anteriormente. Verique a baixa N°:{existente.docNumContasAReceber}");
                         existente.erros = list;
+                        existente.jaBaixado = true;
                     }
                     else
                     {
+                        existente.jaBaixado = false;
                         existente.erros = x.Problemas;
                     }
                 }
@@ -138,6 +167,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             {
                 x.docEntryContasAReceber = docEntryContasAReceber;
                 x.docNumContasAReceber = docNumContasAReceber;
+                x.jaBaixado = true;
             });
             await this.Context.SaveChangesAsync();
         }
