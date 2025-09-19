@@ -70,6 +70,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
 
                 if (!x.NotasEstaApta())
                 {
+                    possuiProblemas = true;
                     if (existente.docEntryContasAReceber > 0)
                     {
                         List<string> list = new List<string>();
@@ -81,7 +82,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                         existente.erros = x.Problemas;
                     }
                 }
-
+                Context.SaveChanges();
 
             }
 
@@ -112,6 +113,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
 
                 if (!x.NotasEstaApta())
                 {
+                    possuiProblemas = true;
                     if (existente.docEntryContasAReceber > 0)
                     {
                         List<string> list = new List<string>();
@@ -123,10 +125,10 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                         existente.erros = x.Problemas;
                     }
                 }
+                Context.SaveChanges();
             }
 
 
-            Context.SaveChanges();
             return possuiProblemas;
         }
         public async Task AlterarNotasQueForamBaixadasComSucesso(int idBaixa, string cl, int docNumContasAReceber, int docEntryContasAReceber)
