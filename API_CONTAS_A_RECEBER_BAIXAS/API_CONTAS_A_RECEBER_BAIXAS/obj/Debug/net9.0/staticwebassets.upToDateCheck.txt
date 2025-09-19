@@ -61,6 +61,7 @@ wwwroot\arquivos\arquivo_20250918_122426.xlsx
 wwwroot\arquivos\arquivo_20250918_122608.xlsx
 wwwroot\arquivos\arquivo_20250919_090742.xlsx
 wwwroot\arquivos\arquivo_20250919_090819.xlsx
+wwwroot\arquivos\arquivo_20250919_124741.xlsm
 wwwroot\arquivos\ComposicaoComErros_177..xlsx
 wwwroot\arquivos\ComposicaoComErros_179..xlsm
 wwwroot\arquivos\ComposicaoComErros_182..xlsx

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "A8Mw7xu7OHXMb1lW3+8kInaSfCgPiNZ1tgTVcJgQUv4=",
+  "Hash": "e1Gs6oO3DIFy3PUDC6Yyd0qkad8PU+MxCJs+wWtL5kI=",
   "Source": "API_CONTAS_A_RECEBER_BAIXAS",
   "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
   "Mode": "Default",
@@ -1338,6 +1338,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250919_090819.xlsx"
+    },
+    {
+      "Identity": "C:\\Users\\JFC\\Downloads\\NOVA_VERSAO\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250919_124741.xlsm",
+      "SourceId": "API_CONTAS_A_RECEBER_BAIXAS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\JFC\\Downloads\\NOVA_VERSAO\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\",
+      "BasePath": "_content/API_CONTAS_A_RECEBER_BAIXAS",
+      "RelativePath": "arquivos/arquivo_20250919_124741#[.{fingerprint}]?.xlsm",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "948z2cs8ts",
+      "Integrity": "2cXAIiH8wclJBWoooZ7ObKJ/ooRM0cJgDx8WWAkpK8c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\arquivos\\arquivo_20250919_124741.xlsm"
     },
     {
       "Identity": "C:\\Users\\JFC\\Downloads\\NOVA_VERSAO\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\ComposicaoComErros_177..xlsx",
@@ -6714,6 +6735,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-lOoN9rqfLmB8ixY9W5KCPYSUae+DTYp5q06yaC4uP+8="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250919_124741.948z2cs8ts.xlsm",
+      "AssetFile": "C:\\Users\\JFC\\Downloads\\NOVA_VERSAO\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250919_124741.xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "485040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2cXAIiH8wclJBWoooZ7ObKJ/ooRM0cJgDx8WWAkpK8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 15:47:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "948z2cs8ts"
+        },
+        {
+          "Name": "label",
+          "Value": "arquivos/arquivo_20250919_124741.xlsm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2cXAIiH8wclJBWoooZ7ObKJ/ooRM0cJgDx8WWAkpK8c="
+        }
+      ]
+    },
+    {
+      "Route": "arquivos/arquivo_20250919_124741.xlsm",
+      "AssetFile": "C:\\Users\\JFC\\Downloads\\NOVA_VERSAO\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250919_124741.xlsm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "485040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2cXAIiH8wclJBWoooZ7ObKJ/ooRM0cJgDx8WWAkpK8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 19 Sep 2025 15:47:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2cXAIiH8wclJBWoooZ7ObKJ/ooRM0cJgDx8WWAkpK8c="
         }
       ]
     },

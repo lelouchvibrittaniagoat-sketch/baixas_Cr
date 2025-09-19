@@ -293,6 +293,10 @@
       "PackagePath": "staticwebassets\\arquivos\\arquivo_20250919_090819.xlsx"
     },
     {
+      "Id": "C:\\Users\\JFC\\Downloads\\NOVA_VERSAO\\baixas_Cr\\API_CONTAS_A_RECEBER_BAIXAS\\API_CONTAS_A_RECEBER_BAIXAS\\wwwroot\\arquivos\\arquivo_20250919_124741.xlsm",
+      "PackagePath": "staticwebassets\\arquivos\\arquivo_20250919_124741.xlsm"
+    },
+    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.API_CONTAS_A_RECEBER_BAIXAS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

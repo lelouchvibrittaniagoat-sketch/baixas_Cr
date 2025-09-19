@@ -188,7 +188,7 @@ public partial class ContasAReceberDbContext : DbContext
             entity.Property(e => e.docEntryContasAReceber).HasColumnName("doc_entry_contas_a_receber");
             entity.Property(e => e.docNumContasAReceber).HasColumnName("doc_num_contas_a_receber");
             entity.Property(e => e.cL).HasColumnName("cl");
-
+            entity.Property(e => e.cancelado).HasColumnName("cancelado");
             // Armazena erros como JSON em uma coluna do tipo text/jsonb
             entity.Property(e => e.erros)
                 .HasColumnName("erros")
@@ -197,6 +197,7 @@ public partial class ContasAReceberDbContext : DbContext
                     v => JsonSerializer.Serialize(v, (JsonSerializerOptions)null),
                     v => JsonSerializer.Deserialize<List<string>>(v, (JsonSerializerOptions)null)
                 );
+
         });
 
         OnModelCreatingPartial(modelBuilder);

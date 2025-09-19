@@ -39,7 +39,7 @@ public class ComposicaoController : ControllerBase
     {
         var listaDeNotas = await _composicaoService.Context.BaixasCR
             .OrderByDescending(x => x.data_Atualizacao)
-            .Take(10)
+            .Take(50)
             .ToListAsync();
 
         var dtoBaixasCRs = listaDeNotas.Select(x => new DtoBaixasCR
@@ -94,22 +94,47 @@ public class ComposicaoController : ControllerBase
         if (baixasCR.nro_baixas == null || !baixasCR.nro_baixas.Any())
             return BadRequest(new { Erros = "Não há documentos para cancelar nesta composição." });
 
+        var docsASeremCancelados = _composicaoService.Context.NotasFiscaisStatus.Where(x => x.id == idBaixasCr && x.cancelado==false).ToList();
+
         var dict = new Dictionary<string, bool>();
-        foreach (var nro in baixasCR.nro_baixas)
+        var erros = new List<String>();
+
+        foreach (var baixa in docsASeremCancelados)
         {
             try
             {
-                var cancelado = await _composicaoService.serviceLayerService.CancelarDocumento(nro);
-                dict[nro.ToString()] = cancelado;
+                if(baixa.docEntryContasAReceber == 0)
+                {
+                    erros.Add($"Não foi baixado pela automação:{baixa.cL}");
+                }
+                var respose = await _composicaoService.serviceLayerService.CancelarDocumento(baixa.docEntryContasAReceber);
+                if (respose.IsSuccessStatusCode)
+                {
+                    baixa.jaBaixado = false;
+                    baixa.docEntryContasAReceber = 0;
+                    baixa.docNumContasAReceber = 0;
+                }
+                else
+                {
+                    string resultado = await respose.Content.ReadAsStringAsync();
+                    baixa.erros.Add(resultado);
+                    erros.Add(resultado);
+                }
+                _composicaoService.Context.SaveChanges();
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Erro ao cancelar documento {Nro}", nro);
-                dict[nro.ToString()] = false;
+                //_logger.LogError(ex, "Erro ao cancelar documento {Nro}", baixa);
+                dict[baixa.ToString()] = false;
             }
         }
-
-        return Ok(dict);
+        var options = new JsonSerializerOptions
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            WriteIndented = true // opcional, deixa o JSON "bonitinho"
+        };
+        return erros.Count>0 ? BadRequest(new { Erros = JsonSerializer.Serialize(erros, options) }): Ok("Composição cancelada com sucesso!");
+        
     }
     
     [HttpGet("GetComposicaoComErros")]
@@ -223,7 +248,10 @@ public class ComposicaoController : ControllerBase
             if (baixaPossuiProblemas)
             {
                 List<NotasFiscaisStatus> notasFiscaisStatuses = _relatoriosService.GetNotasComErroDaBaixa(baixasCR.id);
-
+                baixasCR.status = "ERRO";
+                _composicaoService.Context.BaixasCR.Update(baixasCR);
+                await _composicaoService.Context.SaveChangesAsync();
+               
                 var options = new JsonSerializerOptions
                 {
                     PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
@@ -231,7 +259,7 @@ public class ComposicaoController : ControllerBase
                 };
 
                 string jsonTratado = JsonSerializer.Serialize(notasFiscaisStatuses, options);
-
+                Console.WriteLine(jsonTratado);
                 return BadRequest(new { erros = jsonTratado });
             }
 

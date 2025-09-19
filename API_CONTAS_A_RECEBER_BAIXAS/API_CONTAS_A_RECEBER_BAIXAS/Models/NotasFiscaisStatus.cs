@@ -13,5 +13,6 @@
         public int docEntryContasAReceber { get; set; }
         public int docNumContasAReceber { get; set; }
         public string cL {  get; set; }
+        public bool cancelado { get; set; }
     }
 }

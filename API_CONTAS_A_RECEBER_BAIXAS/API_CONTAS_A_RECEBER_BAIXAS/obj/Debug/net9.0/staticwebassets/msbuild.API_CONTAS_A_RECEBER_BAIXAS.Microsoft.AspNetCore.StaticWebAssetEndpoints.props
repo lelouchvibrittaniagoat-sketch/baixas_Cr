@@ -756,6 +756,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lOoN9rqfLmB8ixY9W5KCPYSUae\u002BDTYp5q06yaC4uP\u002B8="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"14542"},{"Name":"Content-Type","Value":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"},{"Name":"ETag","Value":"\u0022lOoN9rqfLmB8ixY9W5KCPYSUae\u002BDTYp5q06yaC4uP\u002B8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 19 Sep 2025 12:08:19 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/API_CONTAS_A_RECEBER_BAIXAS/arquivos/arquivo_20250919_124741.948z2cs8ts.xlsm">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250919_124741.xlsm'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"948z2cs8ts"},{"Name":"integrity","Value":"sha256-2cXAIiH8wclJBWoooZ7ObKJ/ooRM0cJgDx8WWAkpK8c="},{"Name":"label","Value":"_content/API_CONTAS_A_RECEBER_BAIXAS/arquivos/arquivo_20250919_124741.xlsm"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"485040"},{"Name":"Content-Type","Value":"application/vnd.ms-excel.sheet.macroEnabled.12"},{"Name":"ETag","Value":"\u00222cXAIiH8wclJBWoooZ7ObKJ/ooRM0cJgDx8WWAkpK8c=\u0022"},{"Name":"Last-Modified","Value":"Fri, 19 Sep 2025 15:47:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/API_CONTAS_A_RECEBER_BAIXAS/arquivos/arquivo_20250919_124741.xlsm">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\arquivo_20250919_124741.xlsm'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2cXAIiH8wclJBWoooZ7ObKJ/ooRM0cJgDx8WWAkpK8c="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"485040"},{"Name":"Content-Type","Value":"application/vnd.ms-excel.sheet.macroEnabled.12"},{"Name":"ETag","Value":"\u00222cXAIiH8wclJBWoooZ7ObKJ/ooRM0cJgDx8WWAkpK8c=\u0022"},{"Name":"Last-Modified","Value":"Fri, 19 Sep 2025 15:47:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/API_CONTAS_A_RECEBER_BAIXAS/arquivos/ComposicaoComErros_177..i9d6o6cn3f.xlsx">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\arquivos\ComposicaoComErros_177..xlsx'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

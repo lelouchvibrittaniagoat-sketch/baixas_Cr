@@ -18,21 +18,17 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
         }
         public HttpClient httpClient;
 
-        public async Task<bool> CancelarDocumento(int nroDoc)
+        public async Task<HttpResponseMessage> CancelarDocumento(int nroDoc)
         {
             httpClient = new HttpClient
             {
                 BaseAddress = new Uri("https://picamphdb.b1cloud.com.br:50000/b1s/v2/"),
                 Timeout = TimeSpan.FromMinutes(5)
             };
-            var httpComLogin = await httpClient.PostAsync(httpClient.BaseAddress + "IncomingPayments/Cancel",null);
+            var httpComLogin = await httpClient.PostAsync(httpClient.BaseAddress + $"IncomingPayments({nroDoc})/Cancel",null);
             //http.DefaultRequestHeaders.Add("Prefer", "odata.maxpagesize=13000");
-            if (httpComLogin.IsSuccessStatusCode)
-            {
-                return true;
 
-            }
-            return false;
+            return httpComLogin;
         }
         public async Task RealizarLogin()
         {
@@ -40,7 +36,8 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             {
                 CompanyDB = BANCO_DE_DADOS,
                 UserName = USUARIO,
-                Password = SENHA
+                Password = SENHA,
+                Language = 29
             };
             string json = JsonSerializer.Serialize(loginData);
 

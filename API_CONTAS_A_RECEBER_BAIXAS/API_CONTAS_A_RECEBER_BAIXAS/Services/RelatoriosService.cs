@@ -24,9 +24,9 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             {
                 throw new Exception("Erro de id baixa.");
             }
-            List<NotasFiscaisStatus> notasFiscaisStatuses =  this.Context.NotasFiscaisStatus.Where(x=>x.idBaixa ==idBaixa).ToList();
-            List<bool> notasComProblemas = notasFiscaisStatuses.Select(x => x.possuiErros == true).ToList();
-            return notasComProblemas.Any();
+            List<NotasFiscaisStatus> notasFiscaisStatuses =  this.Context.NotasFiscaisStatus.Where(x=>x.idBaixa ==idBaixa && x.cancelado ==false).ToList();
+            bool notasComProblemas = notasFiscaisStatuses.Where(x => x.erros.Count>0).Any();
+            return notasComProblemas;
         }
         public List<NotasFiscaisStatus> GetNotasComErroDaBaixa(int idBaixa)
         {
@@ -34,7 +34,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
             {
                 throw new Exception("Erro de id baixa.");
             }
-            List<NotasFiscaisStatus> notasFiscaisStatuses = this.Context.NotasFiscaisStatus.Where(x => x.idBaixa == idBaixa).ToList();
+            List<NotasFiscaisStatus> notasFiscaisStatuses = this.Context.NotasFiscaisStatus.Where(x => x.idBaixa == idBaixa && x.cancelado ==false).ToList();
             List<NotasFiscaisStatus> notasComProblemas = notasFiscaisStatuses.Where(x => x.possuiErros == true).ToList();
             return notasComProblemas;
         }

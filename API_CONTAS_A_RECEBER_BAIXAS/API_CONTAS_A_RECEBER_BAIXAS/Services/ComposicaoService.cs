@@ -44,7 +44,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
         }
         public async Task<byte[]> CriarComposicaoComErrosV2(int idBaixa)
         {
-            List<NotasFiscaisStatus> notasFiscaisStatuses =  Context.NotasFiscaisStatus.Where(x => x.erros.Count>0 &&   x.idBaixa == idBaixa).ToList();
+            List<NotasFiscaisStatus> notasFiscaisStatuses =  Context.NotasFiscaisStatus.Where(x => x.erros.Count>0 &&   x.idBaixa == idBaixa && x.cancelado==false).ToList();
             if(notasFiscaisStatuses.Count == 0 )
             {
                 return null;
@@ -71,13 +71,17 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
 
             // Notas de saída
             bool possuiProblemas = false;
+       
+
             foreach (var x in notasASeremBaixadas.NotasFiscaisSaida)
             {
+
                 var nf = (NotaDeSaidaGetDto)x.NotaFiscalAnalisadaBanco;
+
                 int docEntry = nf.DocEntry;
 
                 var existente = Context.NotasFiscaisStatus
-                    .FirstOrDefault(s => s.idBaixa == idBaixa && s.docEntry == docEntry);
+                    .FirstOrDefault(s => s.idBaixa == idBaixa && s.docEntry == docEntry && s.cancelado ==false);
 
                 if (existente == null)
                 {
@@ -120,7 +124,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                 int docEntry = nf.DocEntry;
 
                 var existente = Context.NotasFiscaisStatus
-                    .FirstOrDefault(s => s.idBaixa == idBaixa && s.docEntry == docEntry);
+                    .FirstOrDefault(s => s.idBaixa == idBaixa && s.docEntry == docEntry && s.cancelado == false);
 
                 if (existente == null)
                 {
@@ -162,7 +166,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
         }
         public async Task AlterarNotasQueForamBaixadasComSucesso(int idBaixa, string cl, int docNumContasAReceber, int docEntryContasAReceber)
         {
-            List<NotasFiscaisStatus> notasFiscaisStatuses = this.Context.NotasFiscaisStatus.Where(x => x.idBaixa == idBaixa && x.cL == cl).ToList();
+            List<NotasFiscaisStatus> notasFiscaisStatuses = this.Context.NotasFiscaisStatus.Where(x => x.idBaixa == idBaixa && x.cL == cl && x.cancelado==false).ToList();
             notasFiscaisStatuses.ForEach(x =>
             {
                 x.docEntryContasAReceber = docEntryContasAReceber;
@@ -173,7 +177,7 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
         }
         public async Task AlterarClQuePossuiErros(int idBaixa, string cl, List<string> erros)
         {
-            List<NotasFiscaisStatus> notasFiscaisStatuses = this.Context.NotasFiscaisStatus.Where(x => x.idBaixa == idBaixa && x.cL == cl).ToList();
+            List<NotasFiscaisStatus> notasFiscaisStatuses = this.Context.NotasFiscaisStatus.Where(x => x.idBaixa == idBaixa && x.cL == cl && x.cancelado == false).ToList();
             notasFiscaisStatuses.ForEach(x =>
             {
                 if (x.possuiErros == false && x.docNumContasAReceber > 0)
@@ -439,6 +443,10 @@ namespace API_CONTAS_A_RECEBER_BAIXAS.Services
                     {
                         minNumeroPorTipoDoc.Add(tipoDoc, numeroInterno);
                     }
+                }
+                else
+                {
+                    var t = 0;
                 }
             }
 
